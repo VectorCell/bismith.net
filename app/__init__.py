@@ -21,7 +21,15 @@ def index_page():
 @app.route('/projects')
 def projects_page():
 	githubactions = projects.get_github_actions()
-	return render_template('projects.html', githubactions=githubactions)
+	project_names = ("aes-rijndael",
+	                 "output-sparse",
+	                 "physmem",
+	                 "power-relays",
+	                 "sumpass")
+	githubprojects = projects.get_github_projects(project_names)
+	return render_template('projects.html',
+	                       githubactions=githubactions,
+	                       githubprojects=githubprojects)
 
 
 @app.route('/resume')

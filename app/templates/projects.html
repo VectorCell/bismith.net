@@ -20,12 +20,35 @@
 		{% include 'elements/navbar.html' %}
 		<div class="content">
 			<div class="row">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-6"></div>
-				<div class="col-sm-3" id="github-actions">
+				<div class="col-md-9">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1><a href="http://github.com/VectorCell" target="_blank">GitHub Actions</a></h1>
+							<h1>Projects</h1>
+						</div>
+					</div>
+					{% for proj in githubprojects %}
+						<div class="row">
+							<div class="col-sm-12">
+								<h2>
+									<a href="http://github.com/VectorCell/{{proj['name']}}" target="_blank">{{proj['name']}}</a>
+								</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<pre>{{proj['description']}}</pre>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				<div class="col-md-3" id="github-actions">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2>
+								<a href="http://github.com/VectorCell" target="_blank">
+									Recent GitHub Actions
+								</a>
+							</h2>
 						</div>
 					</div>
 					{% for action in githubactions %}
