@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Brandon Smith</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+
+	<body>
+		{% include 'elements/navbar.html' %}
+
+		<div class="content">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>About Me</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3"><img src="img/linkedin.png" /></div>
+						<div class="col-md-3"><img src="img/git.png" /></div>
+						<div class="col-md-3"><img src="img/twitter.png" /></div>
+						<div class="col-md-3"><img src="img/ut.jpg" /></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<p>
+							I'm Brandon Smith, an undergraduate
+							<a href="http://www.cs.utexas.edu/" target="_blank">computer science</a>
+							student at
+							<a href="http://www.utexas.edu" target="_blank">The University of Texas at Austin</a>.
+						</p>
+						<p>
+							My computer-science-related interests vary widely, but
+							recently I have done projects in web development, Linux
+							systems, and encryption/hash algorithms.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<img src="http://gotdata.me/img/headshots/brandon.jpg" />
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Posts</h1>
+				</div>
+			</div>
+			{% for entry in blogentries %}
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+					<h2><a href="{{entry['url']}}" target="_blank">{{ entry['title'] }}</a></h2>
+					<p>{{ entry['published'] }}</p>
+					</div>
+					<div class="col-md-9 col-sm-8">
+						<div>{{ entry['content']|safe }}</div>
+					</div>
+				</div>
+				<hr>
+			{% endfor %}
+		</div>
+
+		{% include 'elements/footer.html' %}
+	</body>
+
+</html>
