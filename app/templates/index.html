@@ -20,6 +20,7 @@
 		{% include 'elements/navbar.html' %}
 
 		<div class="content">
+
 			<div class="row">
 				<div class="col-md-3">
 					<div class="row">
@@ -27,68 +28,55 @@
 							<h1>About Me</h1>
 						</div>
 					</div>
+				</div>
+				<div class="col-md-6">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-xs-12">
+							<p>
+								I'm Brandon Smith, an undergraduate
+								<a href="http://www.cs.utexas.edu/" target="_blank">computer science</a>
+								student at
+								<a href="http://www.utexas.edu" target="_blank">The University of Texas at Austin</a>.
+							</p>
+							<p>
+								My computer-science-related interests vary widely, but
+								recently I have done projects in web development, Linux
+								systems, and encryption/hash algorithms.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="row">
+						<div class="col=md-12">
+							<img src="http://gotdata.me/img/headshots/brandon.jpg" alt="me" />
+						</div>
+					</div>
+					<div class="row">&nbsp;</div>
+					<div class="row">
+						<div class="col-xs-3">
 							<a href="http://www.linkedin.com/in/vectorcell/" target="_blank">
 								<img src="img/linkedin.png" alt="icon"/>
 							</a>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<a href="http://github.com/VectorCell" target="_blank">
 							<img src="img/git.png" alt="icon"/>
 							</a>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<a href="http://twitter.com/VectorCell" target="_blank">
 							<img src="img/twitter.png" alt="icon"/>
 							</a>
 						</div>
-						<div class="col-md-3">
+						<div class="col-xs-3">
 							<a href="http://cs.utexas.edu/~bismith" target="_blank">
 							<img src="img/ut.jpg" alt="icon"/>
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="row">
-						<p>
-							I'm Brandon Smith, an undergraduate
-							<a href="http://www.cs.utexas.edu/" target="_blank">computer science</a>
-							student at
-							<a href="http://www.utexas.edu" target="_blank">The University of Texas at Austin</a>.
-						</p>
-						<p>
-							My computer-science-related interests vary widely, but
-							recently I have done projects in web development, Linux
-							systems, and encryption/hash algorithms.
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="http://gotdata.me/img/headshots/brandon.jpg" alt="me" />
-				</div>
 			</div>
-		</div>
-
-		<div class="content">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>Posts</h1>
-				</div>
-			</div>
-			{% for entry in blogentries %}
-				<div class="row">
-					<div class="col-md-3 col-sm-4">
-					<h2><a href="{{entry['url']}}" target="_blank">{{ entry['title'] }}</a></h2>
-					<p>{{ entry['published'] }}</p>
-					</div>
-					<div class="col-md-9 col-sm-8">
-						<div>{{ entry['content']|safe }}</div>
-					</div>
-				</div>
-				<hr>
-			{% endfor %}
 		</div>
 
 		{% include 'elements/footer.html' %}

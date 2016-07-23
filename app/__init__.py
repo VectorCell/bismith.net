@@ -20,16 +20,23 @@ def index_page():
 
 @app.route('/projects')
 def projects_page():
-	githubactions = projects.get_github_actions()
-	project_names = ("aes-rijndael",
-	                 "output-sparse",
-	                 "physmem",
-	                 "power-relays",
-	                 "sumpass")
-	githubprojects = projects.get_github_projects(project_names)
-	return render_template('projects.html',
-	                       githubactions=githubactions,
-	                       githubprojects=githubprojects)
+	#githubactions = projects.get_github_actions()
+	#project_names = ('aes-rijndael',
+	#                 'output-sparse',
+	#                 'physmem',
+	#                 'power-relays',
+	#                 'sumpass')
+	#githubprojects = projects.get_github_projects(project_names)
+	#return render_template('projects.html',
+	#                       githubactions=githubactions,
+	#                       githubprojects=githubprojects)
+	return render_template('projects.html')
+
+
+@app.route('/blog')
+def blog_page():
+	blogentries = blog.parse_blog()
+	return render_template('blog.html', blogentries=blogentries)
 
 
 @app.route('/resume')
@@ -50,8 +57,5 @@ def static_proxy(path):
 
 
 if __name__ == '__main__':
-
-	blog.parse_blog()
-
 	app.run()
 	#app.run(host='10.0.0.3', port=8000)

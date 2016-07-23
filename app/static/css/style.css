@@ -2,8 +2,9 @@
 body {
 	padding-top: 80px;
 
-	background-color: lightgray;
-	background-image: url("../img/circuit_board_blue.png");
+	background-color: #00FF99;
+	background-image: linear-gradient(to bottom, #009999, #00FF99);
+	/*background-image: url("../img/circuit_board_darkgreen.png");*/
 	background-repeat: repeat;
 	background-attachment: fixed;
 	color: black;
@@ -16,22 +17,36 @@ body {
 img {
 	max-width: 100%;
 	max-height: auto;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 
-pre, code {
-	color: red;
-	background-color: rgba(255, 255, 255, 0.5);
-	border: none;
-}
 pre {
 	color: black;
-	border: 1px solid darkgray;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid darkgrey;
 }
 pre.inst {
 	font-family: 'Instruction', monospace;
 }
+code {
+	color: red;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+a code {
+	color: blue;
+}
 
+table {
+
+}
+table.centered {
+	text-align: center;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+/*
 hr {
 	height: 30px;
 	border-style: solid;
@@ -40,7 +55,6 @@ hr {
 	border-radius: 20px;
 }
 hr:before {
-	/* Not really supposed to work, but does */
 	display: block;
 	content: "";
 	height: 30px;
@@ -49,6 +63,14 @@ hr:before {
 	border-color: black;
 	border-width: 0 0 1px 0;
 	border-radius: 20px;
+}
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: black;
+	/*background-image: linear-gradient(to right, #ccc, #333, #ccc);*/
 }
 
 .navbar {
@@ -69,7 +91,8 @@ hr:before {
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-header > a:hover,
 .navbar .navbar-header > a:focus {
-	color: #00ff00;
+	/*color: #00ff00;*/
+	color: #00FF99;
 } 
 
 .navbar-brand {
@@ -83,15 +106,17 @@ hr:before {
 }
 
 .content {
-	font-family: 'Raleway', serif;
-	font-size: 14pt;
+	/*font-family: 'Raleway', serif;*/
+	font-family: 'Futura', sans-serif;
+	/*font-family: sans-serif;*/
+	font-size: 12pt;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	padding: 32px;
 	background-color: #f5f5f5;
-	/*background-color: rgba(255, 255, 255, 0.95)*/
-	border-radius: 20px;
+	color: black;
+	/*border-radius: 20px;*/
 }
 
 .col-sm-2 {
@@ -118,11 +143,11 @@ hr:before {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	bottom: 0;
 	background-color: #f5f5f5;
 	color: black;
-	border-radius: 20px;
+	/*border-radius: 20px;*/
 	padding-top: 12px;
 }
 
@@ -149,4 +174,9 @@ hr:before {
 @font-face {
 	font-family: 'Computer';
 	src: url("../font/computer.ttf");
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url("../font/Futura_ICG.ttf");
 }
