@@ -30,7 +30,9 @@ def projects_page():
 	#return render_template('projects.html',
 	#                       githubactions=githubactions,
 	#                       githubprojects=githubprojects)
-	return render_template('projects.html')
+	githubactions = list(projects.get_github_actions())
+	del githubactions[8:]
+	return render_template('projects.html', githubactions=githubactions)
 
 
 @app.route('/blog')

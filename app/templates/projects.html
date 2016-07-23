@@ -29,7 +29,7 @@
 
 					<hr />
 
-					<div class="row">
+					<div class="row project" id="aes-rijndael">
 						<div class="row">
 							<div class="col-sm-4 col-lg-3">
 								<div class="row">
@@ -98,7 +98,7 @@
 
 					<hr />
 
-					<div class="row">
+					<div class="row project" id="sumpass">
 						<div class="row">
 							<div class="col-sm-4 col-lg-3">
 								<div class="row">
@@ -226,7 +226,7 @@
 
 					<hr />
 
-					<div class="row">
+					<div class="row project" id="output-sparse">
 						<div class="row">
 							<div class="col-sm-4 col-lg-3">
 								<div class="row">
@@ -285,7 +285,7 @@
 
 					<hr />
 
-					<div class="row">
+					<div class="row project" id="physmem">
 						<div class="row">
 							<div class="col-sm-4 col-lg-3">
 								<div class="row">
@@ -345,7 +345,7 @@
 
 					<hr />
 
-					<div class="row">
+					<div class="row project" id="power-relays">
 						<div class="row">
 							<div class="col-sm-4 col-lg-3">
 								<div class="row">
@@ -390,30 +390,16 @@
 							</div>
 						</div>
 					</div>
-
-					{% for proj in githubprojects %}
-						<div class="row">
-							<div class="col-sm-12">
-								<h2>
-									<a href="http://github.com/VectorCell/{{proj['name']}}" target="_blank">{{proj['name']}}</a>
-								</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<pre>{{proj['description']}}</pre>
-							</div>
-						</div>
-					{% endfor %}
 				</div>
-				<div class="col-md-3" id="github-actions">
+
+				<div class="col-md-3" id="githubactions">
 					<div class="row">
 						<div class="col-sm-12">
-							<h2>
+							<h3>
 								<a href="http://github.com/VectorCell" target="_blank">
 									Recent GitHub Actions
 								</a>
-							</h2>
+							</h3>
 						</div>
 					</div>
 					{% for action in githubactions %}
@@ -424,6 +410,7 @@
 						</div>
 					{% endfor %}
 				</div>
+
 			</div>
 		</div>
 		{% include 'elements/footer.html' %}

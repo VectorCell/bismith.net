@@ -5,3 +5,12 @@ blockquote {
 	font-family: monospace;
 	font-size: 10pt;
 }
+
+.project {
+	padding-right: 20px;
+}
+
+#githubactions {
+	border: 1px solid black;
+	border-radius: 10px;
+}
