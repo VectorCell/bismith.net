@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo service apache2 restart
+./app/create_db.py && sudo service apache2 restart
