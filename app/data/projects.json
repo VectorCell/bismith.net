@@ -1,0 +1,55 @@
+[
+	{
+		"id": 1,
+		"name": "aes-rijndael",
+		"author": 1,
+		"description": [
+			"This is an implementation of the AES encryption cipher in C++, with no dependencies other than the standard library. It should be 100% portable, as it does not use any instructions specific to a particular computer architecture. Of course, this means that it will be slower than any hardware-accelerated implementation. Adding hardware acceleration is a goal for this project.",
+			"This program was created in the United States, and contains an implementation of a cryptographic algorithm, and therefore (for reasons I personally believe are dumb) may be subject to <a href=\"https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States\">	restrictions regarding its exportation</a>. So, don't download this if you're in a country for which the \"exportation\" of math is restricted by law.",
+			"I provide no guarantee of the robustness or cryptographic strength of this implementation. Please don't use this if you have serious cryptographic needs. Instead, use another open-source, more scrutinized implementation, such as that which comes with <a href=\"https://www.openssl.org\">OpenSSL</a>."
+		]
+	},
+	{
+		"id": 2,
+		"name": "sumpass",
+		"author": 1,
+		"description": [
+			"This is a tool for getting the checksum of piped input while it's in use. Since it outputs on standard out exactly what it received on standard in, it can be placed in the middle of an existing pipe to extract a hash of a stream of data.",
+			"For example, you could use it to verify a file as it's being downloaded:",
+			"<code>curl http://url/image.iso | sump md5 > image.iso 2> image.iso.md5</code>",
+			"As a side note, performance seems to be superior to corresponding md5sum-type programs for large data streams (in some cases, substantially faster).",
+			"x64 benchmarked with <a href=\"https://github.com/VectorCell/sumpass/blob/master/benchmark.sh\"><code>benchmark.sh</code></a> using 1 GB of test data on an Intel Xeon E3-1271 @ 3.6 GHz in Ubuntu 14.04.3 LTS, built with GCC 4.8. ARMv6 benchmarked with <a href=\"https://github.com/VectorCell/sumpass/blob/master/benchmark.sh\"><code>benchmark.sh</code></a> using 32 MB of test data on a Raspberry Pi B+ in Raspbian, built with GCC 4.6.",
+			"<table class=\"pageable-table display table table-striped table-hover\"><thead><tr><th>Hash</th><th>*sum (x64)</th><th>*sump (x64)</th><th>*sum (ARMv6)</th><th>*sump (ARMv6)</th></tr></thead><tbody><tr><td>MD5</td><td>671 MB/s</td><td>709 MB/s</td><td>20 MB/s</td><td>20 MB/s</td></tr><tr><td>SHA1</td><td>426 MB/s</td><td>826 MB/s</td><td>13.3 MB/s</td><td>14.6 MB/s</td></tr><tr><td>SHA224</td><td>244 MB/s</td><td>292 MB/s</td><td>8.34 MB/s</td><td>9.64 MB/s</td></tr><tr><td>SHA256</td><td>243 MB/s</td><td>292 MB/s</td><td>8.71 MB/s</td><td>11.2 MB/s</td></tr><tr><td>SHA384</td><td>365 MB/s</td><td>447 MB/s</td><td>471 kB/s</td><td>6.52 MB/s</td></tr><tr><td>SHA512</td><td>363 MB/s</td><td>445 MB/s</td><td>477 kB/s</td><td>6.56 MB/s</td></tr></tbody></table>",
+			"There seems to be serious problems with the included sha384sum and sha512sum programs in Rasbpian, at least as of the end of 2015."
+		]
+	},
+	{
+		"id": 3,
+		"name": "output-sparse",
+		"author": 1,
+		"description": [
+			"This is a tool for creating a sparse file from another file or data stream. It may be useful for keeping disk images small while still maintaining disk availability for virtualized clients, among other things.",
+			"This tool can only create sparse files if used with operating and file systems that have sparse file support.",
+			"This tool was designed primarily with disk images in mind. Decompressing an existing disk image may take up a large amount of disk space, even if most of the virtual sectors are unused and zeroed out. Decompressing a disk image to a sparse file can save a lot of disk space and prevent unnecessary disk I/O operations."
+		]
+	},
+	{
+		"id": 4,
+		"name": "physmem",
+		"author": 1,
+		"description": [
+			"This is a tool designed for usage in Linux, in order to read to or write from a physical address in memory. It was primarily designed to allow writingto mapped device memory in an FPGA with an embedded ARM core.",
+			"Created to write to memory-mapped SPI flash from an ARM SoCin order to write a configuration image for an FPGA.",
+			"Similar to <a href=\"https://github.com/hackndev/tools/blob/master/devmem2.c\">devmem2</a>, but allows for reading multiple words at a time.",
+			"Precompiled binaries are available for the following systems/architectures:<ul><li><a href=\"https://github.com/VectorCell/physmem/blob/master/bin/physmem-x86_64?raw=true\">Linux x86-64</a></li><li><a href=\"https://github.com/VectorCell/physmem/blob/master/bin/physmem-armv6l?raw=true\">Linux ARMv6</a></li><li><a href=\"https://github.com/VectorCell/physmem/blob/master/bin/physmem-armv7l?raw=true\">Linux ARMv7</a></li></ul>"
+		]
+	},
+	{
+		"id": 5,
+		"name": "power-relays",
+		"author": 1,
+		"description": [
+			"A command-line tool for controlling relays attached to Rasbperry Pi gpio pins. Designed to be compiled to the C++11 standard, and dependent on <a href=\"https://github.com/WiringPi/WiringPi\">WiringPi</a>"
+		]
+	}
+]

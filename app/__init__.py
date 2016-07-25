@@ -3,6 +3,8 @@
 from flask import Flask, render_template, jsonify
 import sys
 
+from models import User, Project
+
 import blog
 import projects
 
@@ -20,19 +22,17 @@ def index_page():
 
 @app.route('/projects')
 def projects_page():
-	#githubactions = projects.get_github_actions()
-	#project_names = ('aes-rijndael',
-	#                 'output-sparse',
-	#                 'physmem',
-	#                 'power-relays',
-	#                 'sumpass')
-	#githubprojects = projects.get_github_projects(project_names)
-	#return render_template('projects.html',
-	#                       githubactions=githubactions,
-	#                       githubprojects=githubprojects)
+	project_names = ('aes-rijndael',
+	                 'output-sparse',
+	                 'physmem',
+	                 'power-relays',
+	                 'sumpass')
+	allprojects = Project.query.all()
 	githubactions = list(projects.get_github_actions())
 	del githubactions[8:]
-	return render_template('projects.html', githubactions=githubactions)
+	return render_template('projects.html',
+	                       projects=allprojects,
+	                       githubactions=githubactions)
 
 
 @app.route('/blog')

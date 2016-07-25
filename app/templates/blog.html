@@ -28,8 +28,8 @@
 					</p>
 				</div>
 			</div>
-			<hr>
 			{% for entry in blogentries %}
+				<hr>
 				<div class="row">
 					<div class="col-md-3 col-sm-4">
 					<h2><a href="{{entry['url']}}" target="_blank">{{ entry['title'] }}</a></h2>
@@ -39,7 +39,6 @@
 						<div>{{ entry['content']|safe }}</div>
 					</div>
 				</div>
-				<hr>
 			{% endfor %}
 		</div>
 
