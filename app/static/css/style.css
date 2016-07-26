@@ -86,7 +86,8 @@ hr {
 
 .content {
 	/*font-family: 'Raleway', serif;*/
-	font-family: 'Helvetica', sans-serif;
+	/*font-family: 'Helvetica', sans-serif;*/
+	font-family: 'Bank Printer', monospace;
 	font-size: 12pt;
 	margin-left: auto;
 	margin-right: auto;
@@ -164,4 +165,9 @@ hr {
 @font-face {
 	font-family: 'Futura';
 	src: url("../font/Futura_ICG.ttf");
+}
+
+@font-face {
+	font-family: 'Bank Printer';
+	src: url("../font/F25_Bank_Printer.otf");
 }
