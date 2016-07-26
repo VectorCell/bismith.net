@@ -59,5 +59,4 @@ def static_proxy(path):
 
 
 if __name__ == '__main__':
-	app.run()
-	#app.run(host='10.0.0.3', port=8000)
+	app.run(host='10.0.0.3', port=8000)

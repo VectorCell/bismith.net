@@ -2,8 +2,8 @@
 body {
 	padding-top: 80px;
 
-	background-color: #00FF99;
-	background-image: linear-gradient(to bottom, #009999, #00FF99);
+	background-color: #0f2431;
+	/*background-image: linear-gradient(to bottom, #283743, #0f2431);*/
 
 	background-repeat: repeat;
 	background-attachment: fixed;
@@ -14,38 +14,6 @@ body {
 }
 */
 
-img {
-	max-width: 100%;
-	max-height: auto;
-	border-radius: 8px;
-}
-
-pre {
-	color: black;
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid darkgrey;
-}
-pre.inst {
-	font-family: 'Instruction', monospace;
-}
-code {
-	color: red;
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
-}
-a code {
-	color: blue;
-}
-
-table {
-
-}
-table.centered {
-	text-align: center;
-	margin-left:auto; 
-	margin-right:auto;
-}
-
 hr {
 	border: 0;
 	height: 1px;
@@ -55,45 +23,43 @@ hr {
 .navbar {
 	font-family: 'Unispace', monospace;
 
-	background-color: rgba(0, 0, 0, 0.8);
+	/*background-color: black;*/
+	background-color: #283743;
 
-	border-bottom: 3px solid darkgray;
+	/*border-bottom: 3px solid darkgray;*/
 	border: none;
 	padding: 7px 10px;
 }
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-header > a {
-	color: white;
+	color: #c8d1de;
 }
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-header > a:hover,
 .navbar .navbar-header > a:focus {
-	color: #00FF99;
+	color: white;
 } 
 
 .navbar-brand {
 	font-size: 20pt;
-	/*font-weight: bold;*/
 }
 
 .navbar-nav {
 	font-size: 20pt;
-	/*font-weight: bold;*/
 }
 
 .content {
-	/*font-family: 'Raleway', serif;*/
 	font-family: 'Helvetica', sans-serif;
 	font-size: 12pt;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 	padding: 32px;
-	background-color: #f5f5f5;
-	color: black;
+	background-color: #0f2431;
+	color: #8797a3;
 	border-radius: 10px;
 }
 @media screen and (max-width: 1024px) {
@@ -102,17 +68,44 @@ hr {
 	}
 }
 
-
-.col-sm-2 {
-
+.content a {
+	color: #c8d1de;
+}
+.content a:hover {
+	color: white;
+	text-decoration: none;
 }
 
-.col-sm-10 {
-
+.content img {
+	max-width: 100%;
+	max-height: auto;
+	border-radius: 8px;
 }
 
-.col-sm-12 {
+.content pre {
+	color: inherit;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid darkgrey;
+}
+.content pre.inst {
+	font-family: 'Instruction', monospace;
+}
+.content code {
+	color: inherit;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+.content a code {
+	
+}
 
+.content table {
+
+}
+.content table.centered {
+	text-align: center;
+	margin-left: auto; 
+	margin-right: auto;
 }
 
 .align-right {
