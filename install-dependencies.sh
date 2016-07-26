@@ -9,3 +9,7 @@ sudo apt-get install libpq-dev
 sudo pip3 install Flask
 sudo pip3 install Flask-SQLAlchemy
 sudo pip3 install psycopg2
+
+sudo a2enmod wsgi
+sudo cp bismith.net.conf /etc/apache2/sites-available/
+cd /etc/apache2/sites-available/ && sudo a2ensite FlaskApp && cd -
