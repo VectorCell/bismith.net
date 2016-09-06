@@ -1,6 +1,18 @@
 [
 	{
-		"id": 1,
+		"id": 6,
+		"name": "teensy-audio-viz",
+		"author": 1,
+		"description" : [
+			"An audio visualizer using a Teensy 3.1, which has a 32-bit ARM Cortex-M4 @ 72 MHz with 64k RAM.",
+			"Requires <code>gcc-arm-none-eabi</code> and <a href=\"https://github.com/PaulStoffregen/teensy_loader_cli\"><code>teensy_loader_cli</code></a>, which itself needs <code>libusb-dev</code>.",
+			"In certain versions of Ubuntu, you may need to use <code>gcc-arm-embedded</code> instead if you an error about <code>nano.specs</code>:",
+			"<pre>sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi\nsudo add-apt-repository ppa:team-gcc-arm-embedded/ppa\nsudo apt-get update\nsudo apt-get install gcc-arm-embedded</pre>",
+			"This is currently a work in progress. The plan is to turn it into a visualizer that pulses an array of LEDs according to a frequency band of the stereo audio signal input. This will require DSP."
+		]
+	},
+	{
+		"id": 5,
 		"name": "aes-rijndael",
 		"author": 1,
 		"description": [
@@ -10,7 +22,7 @@
 		]
 	},
 	{
-		"id": 2,
+		"id": 4,
 		"name": "sumpass",
 		"author": 1,
 		"description": [
@@ -34,7 +46,7 @@
 		]
 	},
 	{
-		"id": 4,
+		"id": 2,
 		"name": "physmem",
 		"author": 1,
 		"description": [
@@ -45,7 +57,7 @@
 		]
 	},
 	{
-		"id": 5,
+		"id": 1,
 		"name": "power-relays",
 		"author": 1,
 		"description": [
