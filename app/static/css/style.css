@@ -4,7 +4,7 @@ body {
 
 	background-color: #00FF99;
 	/*background-image: linear-gradient(to bottom, #009999, #00FF99);*/
-	background-image: url('img/tesselation.jpg');
+	background-image: url('../img/tesselation.jpg');
 
 	background-repeat: repeat;
 	background-attachment: fixed;
