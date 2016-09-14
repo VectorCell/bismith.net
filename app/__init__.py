@@ -62,10 +62,11 @@ def static_proxy(path):
 def send_zfs_alert():
 
 	try:
+		import base64
 		import smtplib
-		sender = 'brandon@bismith.net'
-		receivers = ['5125788091@txt.att.net']
-		message = 'this is a test message (test 3)'
+		sender = base64.b64decode('WkZTLkFMRVJUQGJpc21pdGgubmV0')
+		receivers = [base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==')]
+		message = 'ZFS error detected'
 		smtpObj = smtplib.SMTP('localhost')
 		smtpObj.sendmail(sender, receivers, message)
 		status = {'success': True}
