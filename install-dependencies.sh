@@ -9,6 +9,8 @@ sudo apt-get install libpq-dev
 sudo pip3 install Flask
 sudo pip3 install Flask-SQLAlchemy
 sudo pip3 install psycopg2
+sudo pip3 install feedparser
+sudo pip3 install markdown
 
 sudo a2enmod wsgi
 sudo cp bismith.net.conf /etc/apache2/sites-available/
