@@ -2,11 +2,14 @@
 
 from flask import Flask, render_template, jsonify
 import sys
+import os
 
 from models import User, Project
-
 import blog
 import projects
+
+
+UPLOAD_DIR = os.path.realpath(__file__)
 
 
 app = Flask(__name__)
@@ -17,7 +20,10 @@ app = Flask(__name__)
 @app.route('/home')
 def index_page():
 	blogentries = blog.parse_blog()
-	return render_template('index.html', blogentries=blogentries)
+	githubactions = list(projects.get_github_actions())
+	return render_template('index.html',
+	                       blogentries=blogentries,
+	                       githubactions=githubactions)
 
 
 @app.route('/projects')
@@ -51,6 +57,11 @@ def about_page():
 	return render_template('about.html')
 
 
+@app.route('/upload')
+def upload_page():
+	return 
+
+
 @app.route('/<path:path>')
 def static_proxy(path):
 	if '.' not in path:
@@ -60,7 +71,6 @@ def static_proxy(path):
 
 @app.route('/api/sendzfsalert')
 def send_zfs_alert():
-
 	try:
 		import base64
 		import smtplib
@@ -77,4 +87,4 @@ def send_zfs_alert():
 
 
 if __name__ == '__main__':
-	app.run(host='10.0.0.3', port=8000)
+	app.run(host='10.0.0.3', port=8888)

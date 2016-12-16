@@ -140,6 +140,11 @@ hr {
 	color: #000088;
 }
 
+#githubactions {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
 @font-face {
 	font-family: 'Instruction';
 	src: url("../font/instruction.otf");
