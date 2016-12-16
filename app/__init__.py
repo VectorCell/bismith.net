@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
 
-from flask import Flask, render_template, jsonify
 import sys
 import os
+
+from flask import Flask, render_template, jsonify, request, redirect, url_for, abort
+from werkzeug.utils import secure_filename
 
 from models import User, Project
 import blog
 import projects
 
 
-UPLOAD_DIR = os.path.realpath(__file__)
-
-
 app = Flask(__name__)
+
+
+UPLOAD_DIR = os.path.realpath(__file__)[:-len('__init__.py')] + 'static/uploads'
+app.config['UPLOAD_DIR'] = UPLOAD_DIR
+app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024
 
 
 @app.route('/')
@@ -57,9 +61,35 @@ def about_page():
 	return render_template('about.html')
 
 
-@app.route('/upload')
+@app.route('/upload', methods=('GET', 'POST'))
 def upload_page():
-	return 
+	if request.method == 'POST':
+		if 'file' not in request.files:
+			flash('no file part')
+			return redirect(request.url)
+		file = request.files['file']
+		if not file.filename:
+			flash('no selected file')
+			return redirect(request.url)
+		if file:
+			filename = secure_filename(file.filename)
+			file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
+	filelist = os.listdir(app.config['UPLOAD_DIR'])
+	return render_template('upload.html',
+	                       upload_dir=app.config['UPLOAD_DIR'],
+	                       filelist=filelist)
+
+
+@app.route('/uploaded')
+def uploaded_file():
+	filename = secure_filename(request.args.get('file'))
+	if '/' in filename:
+		abort(400)
+	if request.args.get('delete') == 'yes':
+		os.remove(app.config['UPLOAD_DIR'] + '/' + filename)
+		return redirect(url_for('upload_page'))
+	else:
+		return redirect('/uploads/' + filename)
 
 
 @app.route('/<path:path>')

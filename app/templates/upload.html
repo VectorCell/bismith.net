@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Upload - Brandon Smith</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		{% include 'elements/navbar.html' %}
+		<div class="content">
+
+			<!-- file list -->
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Uploaded Files</h1>
+				</div>
+			</div>
+			<hr >
+			<div class="row">
+				<div class="col-sm-12">
+					{% for file in filelist %}
+						<p>
+							<a href="/uploads/{{ file }}">{{ file }}</a>
+							(<a href="/uploaded?file={{ file}}&delete=yes">delete</a>)
+						</p>
+					{% endfor %}
+				</div>
+			</div>
+			<hr />
+			<!-- end file list -->
+
+			<!-- uploader -->
+			<div class="row">
+				<div class="col-sm-3">
+					<h1>Upload New File</h1>
+				</div>
+				<div class="col-sm-9">
+					<p>
+						<form action="" method=post enctype=multipart/form-data>
+							<input type=file name=file>
+							<input type=submit value=Upload>
+						</form>
+					</p>
+				</div>
+			</div>
+			<!-- end uploaded -->
+
+		</div>
+		{% include 'elements/footer.html' %}
+	</body>
+
+</html>
