@@ -20,19 +20,15 @@
 		{% include 'elements/navbar.html' %}
 
 		<div class="content">
-
-		<!-- CONTENT -->
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-9">
+					
+					<!-- about me -->
 					<div class="row">
-						<div class="col-md-12">
-							<h1>About Me</h1>
+						<div class="col-sm-3">
+							<h1>Who?</h1>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-7">
-					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-sm-9">
 							<p>
 								I'm Brandon Smith, an undergraduate
 								<a href="http://www.cs.utexas.edu/" target="_blank">computer science</a>
@@ -42,12 +38,50 @@
 							<p>
 								My computer-science-related interests vary widely, but
 								recently I have done projects in web development, Linux
-								systems, and encryption/hash algorithms.
+								systems, and encryption/hashing algorithms.
+							</p>
+							<p>
+								You should check out some of the
+								<a href="/projects">projects</a>
+								that I've worked on.
 							</p>
 						</div>
 					</div>
+					<!-- end about me -->
+
+					<hr />
+
+					<!-- blog -->
+					<div class="row">
+						<div class="col-sm-12">
+							<h1>Recent Blog Posts:</h1>
+							<p>
+								Pulled from the full blog <a href="http://blog.bismith.net">here</a>.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							{% for entry in blogentries %}
+								<hr>
+								<div class="row">
+									<div class="col-md-3">
+										<h2><a href="{{entry['url']}}" target="_blank">{{ entry['title'] }}</a></h2>
+										<p>{{ entry['published'] }}</p>
+									</div>
+									<div class="col-md-9">
+										<div>{{ entry['content']|safe }}</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+					<!-- end blog -->
+
 				</div>
 				<div class="col-md-3">
+
+					<!-- photo and icons -->
 					<div class="row">
 						<div class="col=md-12">
 							<img src="/img/me.jpg" alt="me" />
@@ -76,54 +110,36 @@
 							</a>
 						</div>
 					</div>
-				</div>
-			</div>
+					<!-- end photo and icons -->
 
-			<!-- BLOG -->
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>Recent Posts</h1>
-					<p>
-						Pulled from the full blog <a href="http://blog.bismith.net">here</a>.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-9">
-					{% for entry in blogentries %}
-						<hr>
-						<div class="row">
-							<div class="col-md-3">
-								<h2><a href="{{entry['url']}}" target="_blank">{{ entry['title'] }}</a></h2>
-								<p>{{ entry['published'] }}</p>
-							</div>
-							<div class="col-md-9">
-								<div>{{ entry['content']|safe }}</div>
-							</div>
-						</div>
-					{% endfor %}
-				</div>
-				<div class="col-md-3" id="githubactions">
-					<div class="row">
+					<div class="row">&nbsp;</div>
+
+					<!-- githubactions -->
+					<div class="row githubactions">
 						<div class="col-sm-12">
-							<h3>
-								<a href="http://github.com/VectorCell" target="_blank">
-									Recent GitHub Actions
-								</a>
-							</h3>
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>
+										<a href="http://github.com/VectorCell" target="_blank">
+											Recent GitHub Actions
+										</a>
+									</h3>
+								</div>
+							</div>
+							{% for action in githubactions %}
+								<div class="row">
+									<div class="col-sm-12">
+										<p>{{ action['content']|safe }}</p>
+									</div>
+								</div>
+							{% endfor %}
 						</div>
 					</div>
-					{% for action in githubactions %}
-						<div class="row">
-							<div class="col-sm-12">
-								<p>{{ action['content']|safe }}</p>
-							</div>
-						</div>
-					{% endfor %}
+					<!-- end githubactions -->
 				</div>
 			</div>
-
-		</div>  <!-- end content -->
+		</div>
+		<!-- end content -->
 
 		{% include 'elements/footer.html' %}
 	</body>
