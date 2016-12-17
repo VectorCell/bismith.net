@@ -73,7 +73,18 @@ def upload_page():
 			filename = secure_filename(file.filename)
 			file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
 			return 'file upload complete, reloading ...'
-	filelist = os.listdir(app.config['UPLOAD_DIR'])
+	listdir = os.listdir(app.config['UPLOAD_DIR'])
+	filelist = []
+	for file in listdir:
+		def human_readable_size(numbytes):
+			return numbytes
+		size = os.path.getsize('/'.join((app.config['UPLOAD_DIR'], file)))
+		d = {
+			'name': file,
+			'size': size,
+			'readable_size': human_readable_size(size)
+		}
+		filelist.append(d)
 	return render_template('upload.html',
 	                       upload_dir=app.config['UPLOAD_DIR'],
 	                       filelist=filelist)
