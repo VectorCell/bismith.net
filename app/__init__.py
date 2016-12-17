@@ -2,6 +2,8 @@
 
 import sys
 import os
+import time
+import datetime
 
 from flask import Flask, render_template, jsonify, request, redirect, url_for, abort
 from werkzeug.utils import secure_filename
@@ -65,25 +67,35 @@ def about_page():
 def upload_page():
 	if request.method == 'POST':
 		if 'file' not in request.files:
-			return redirect(request.url)
+			return 'File not specified'
+			#return redirect(request.url)
 		file = request.files['file']
 		if not file.filename:
-			return redirect(request.url)
+			return 'File not specified'
+			#return redirect(request.url)
 		if file:
 			filename = secure_filename(file.filename)
-			file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
-			return 'file upload complete, reloading ...'
+			if not os.path.isfile(os.path.join(app.config['UPLOAD_DIR'], filename)):
+				file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
+				return 'file upload complete'
+			else:
+				return 'a file of that name already exists'
+		else:
+			return 'file cannot be uploaded: ' + str(file)
 	listdir = os.listdir(app.config['UPLOAD_DIR'])
 	listdir.sort()
 	filelist = []
 	for file in listdir:
 		def human_readable_size(numbytes):
 			return numbytes
-		size = os.path.getsize('/'.join((app.config['UPLOAD_DIR'], file)))
+		path = os.path.join(app.config['UPLOAD_DIR'], file)
+		size = os.path.getsize(path)
 		d = {
 			'name': file,
 			'size': size,
-			'readable_size': human_readable_size(size)
+			'size_readable': human_readable_size(size),
+			'mtime': os.path.getmtime(path),
+			'mtime_readable': datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y-%m-%d %H:%M:%S UTC')
 		}
 		filelist.append(d)
 	return render_template('upload.html',
