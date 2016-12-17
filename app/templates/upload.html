@@ -13,19 +13,75 @@
 		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/upload.css">
 	</head>
 
 	<body>
 		{% include 'elements/navbar.html' %}
 		<div class="content">
 
+			<!-- uploader -->
+			<div class="row">
+				<div class="col-sm-3">
+					<h1>Upload New File</h1>
+				</div>
+				<div class="col-sm-9">
+					<form action="" method=post enctype=multipart/form-data>
+						<input type=file name=file>
+						<input type=submit value=Upload>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1 percent">0%</div>
+				<div class="col-xs-11 progress">
+					<div class="bar">&nbsp;</div>
+				</div>
+				<div id="status"></div>
+			</div>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+			<script src="http://malsup.github.com/jquery.form.js"></script>
+			<script>
+			(function() {
+				var bar = $('.bar');
+				var percent = $('.percent');
+				var status = $('#status');
+				
+				$('form').ajaxForm({
+					beforeSend: function() {
+						status.empty();
+						var percentVal = '0%';
+						bar.width(percentVal)
+						percent.html(percentVal);
+					},
+					uploadProgress: function(event, position, total, percentComplete) {
+						var percentVal = percentComplete + '%';
+						bar.width(percentVal)
+						percent.html(percentVal);
+					},
+					success: function() {
+						var percentVal = '100%';
+						bar.width(percentVal)
+						percent.html(percentVal);
+					},
+					complete: function(xhr) {
+						status.html(xhr.responseText);
+						location.reload();
+					}
+				});
+
+			})();
+			</script>
+			<!-- end uploaded -->
+
 			<!-- file list -->
+			<hr >
 			<div class="row">
 				<div class="col-sm-12">
 					<h1>Uploaded Files</h1>
+					<p>&nbsp;</p>
 				</div>
 			</div>
-			<hr >
 			<div class="row">
 				<div class="col-sm-12">
 					{% for file in filelist %}
@@ -38,22 +94,6 @@
 			</div>
 			<hr />
 			<!-- end file list -->
-
-			<!-- uploader -->
-			<div class="row">
-				<div class="col-sm-3">
-					<h1>Upload New File</h1>
-				</div>
-				<div class="col-sm-9">
-					<p>
-						<form action="" method=post enctype=multipart/form-data>
-							<input type=file name=file>
-							<input type=submit value=Upload>
-						</form>
-					</p>
-				</div>
-			</div>
-			<!-- end uploaded -->
 
 		</div>
 		{% include 'elements/footer.html' %}

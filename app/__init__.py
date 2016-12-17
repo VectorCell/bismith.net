@@ -65,15 +65,14 @@ def about_page():
 def upload_page():
 	if request.method == 'POST':
 		if 'file' not in request.files:
-			flash('no file part')
 			return redirect(request.url)
 		file = request.files['file']
 		if not file.filename:
-			flash('no selected file')
 			return redirect(request.url)
 		if file:
 			filename = secure_filename(file.filename)
 			file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
+			return 'file upload complete, reloading ...'
 	filelist = os.listdir(app.config['UPLOAD_DIR'])
 	return render_template('upload.html',
 	                       upload_dir=app.config['UPLOAD_DIR'],
@@ -105,10 +104,10 @@ def send_zfs_alert():
 		import base64
 		import smtplib
 		sender = base64.b64decode('WkZTLkFMRVJUQGJpc21pdGgubmV0').decode('UTF-8')
-		receivers = [base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')]
+		receiver = base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')
 		message = 'ZFS error detected'
 		smtpObj = smtplib.SMTP('localhost')
-		smtpObj.sendmail(sender, receivers, message)
+		smtpObj.sendmail(sender, [receivers], message)
 		status = {'success': True, 'message': message, 'sender': sender,
 		          'receivers': receivers}
 	except Exception as ex:
