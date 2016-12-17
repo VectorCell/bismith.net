@@ -74,6 +74,7 @@ def upload_page():
 			file.save(os.path.join(app.config['UPLOAD_DIR'], filename))
 			return 'file upload complete, reloading ...'
 	listdir = os.listdir(app.config['UPLOAD_DIR'])
+	listdir.sort()
 	filelist = []
 	for file in listdir:
 		def human_readable_size(numbytes):
