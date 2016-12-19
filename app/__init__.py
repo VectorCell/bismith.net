@@ -13,6 +13,9 @@ import blog
 import projects
 
 
+ALLOW_FILE_DELETION = False
+
+
 app = Flask(__name__)
 
 
@@ -95,7 +98,7 @@ def upload_page():
 				'size_readable': size,
 				'mtime': os.path.getmtime(path),
 				'mtime_readable': datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y-%m-%d %H:%M:%S UTC'),
-				'allow_delete': False
+				'allow_delete': ALLOW_FILE_DELETION
 			}
 			filelist.append(d)
 	return render_template('upload.html',
@@ -108,7 +111,7 @@ def uploaded_file():
 	filename = secure_filename(request.args.get('file'))
 	if '/' in filename:
 		abort(400)
-	if request.args.get('delete') == 'yes':
+	if request.args.get('delete') == 'yes' and ALLOW_FILE_DELETION:
 		os.remove(app.config['UPLOAD_DIR'] + '/' + filename)
 		return redirect(url_for('upload_page'))
 	else:
