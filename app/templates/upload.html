@@ -94,8 +94,10 @@
 								<td style="text-align: right"><code style="color: black">{{ file['size_readable'] }}</code></td>
 								<td>&nbsp;&nbsp;&nbsp;</td>
 								<td><a href="/uploads/{{ file['name'] }}">{{ file['name'] }}</a></td>
-								<td>&nbsp;&nbsp;&nbsp;</td>
-								<td>(<a href="/uploaded?file={{ file['name'] }}&delete=yes">delete</a>)</td>
+								{% if file['allow_delete'] %}
+									<td>&nbsp;&nbsp;&nbsp;</td>
+									<td>(<a href="/uploaded?file={{ file['name'] }}&delete=yes">delete</a>)</td>
+								{% endif %}
 							</tr>
 						{% else %}
 							<p>There are no files.</p>

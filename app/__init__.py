@@ -95,7 +95,8 @@ def upload_page():
 			'size': size,
 			'size_readable': human_readable_size(size),
 			'mtime': os.path.getmtime(path),
-			'mtime_readable': datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y-%m-%d %H:%M:%S UTC')
+			'mtime_readable': datetime.datetime.fromtimestamp(os.path.getmtime(path)).strftime('%Y-%m-%d %H:%M:%S UTC'),
+			'allow_delete': False
 		}
 		filelist.append(d)
 	return render_template('upload.html',
