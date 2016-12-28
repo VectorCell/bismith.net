@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Dashboard - Brandon Smith</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
+		<script type="text/javascript">
+			// reload once every hour
+			var timeout = setTimeout("location.reload(true);", 60 * 60 * 1000);
+			function resetTimeout() {
+				clearTimeout(timeout);
+				timeout = setTimeout("location.reload(true);", 60 * 60 * 1000);
+			}
+		</script>
+
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	</head>
+
+	<body onload="startTime();">
+		{% include 'elements/navbar.html' %}
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-12 centered">
+					<div id="time"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 centered">
+					<h1><a href="{{ weather['url_more'] }}">{{ weather['name'] }}</a></h1>
+					<p><a href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
+					<p>Sunlight: {{ weather['sunrise'] }} - {{ weather['sunset'] }}</p>
+				</div>
+				<div class="col-sm-4 centered">
+					<h2>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h2>
+					<h4 class="temphigh">High: {{ weather['highf'] }}°F ({{ weather['highc'] }}°C)</h4>
+					<h4 class="templow">Low: {{ weather['lowf'] }}°F ({{ weather['lowc'] }}°C)</h4>
+				</div>
+				<div class="col-sm-4 centered">
+					<h2>{{ weather['cond'] }}</h2>
+					<p>{{ weather['cond_detail'] }}</p>
+					<p>Wind speed: {{ weather['wind_speed'] }} mph</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 centered">
+					<h6>Updated: {{ weather['updated'] }}</h6>
+				</div>
+			</div>
+		</div> <!-- end content -->
+		{% include 'elements/footer.html' %}
+	</body>
+
+</html>

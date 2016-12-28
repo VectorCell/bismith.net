@@ -11,6 +11,7 @@ from werkzeug.utils import secure_filename
 from models import User, Project
 import blog
 import projects
+import dashboard
 
 
 ALLOW_FILE_DELETION = False
@@ -64,6 +65,12 @@ def resume_page():
 @app.route('/about')
 def about_page():
 	return render_template('about.html')
+
+
+@app.route('/dashboard')
+def dashboard_page():
+	return render_template('dashboard.html',
+	                       weather=dashboard.get_weather())
 
 
 @app.route('/upload', methods=('GET', 'POST'))
