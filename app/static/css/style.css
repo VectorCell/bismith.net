@@ -185,3 +185,8 @@ hr {
 	font-family: 'Bank Printer';
 	src: url("../font/F25_Bank_Printer.otf");
 }
+
+@font-face {
+	font-family: 'LCD';
+	src: url("../font/lcd24.ttf");
+}

@@ -9,29 +9,32 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script>
+		<script type="text/javascript">
+
 			function startTime() {
 				var today = new Date();
 				var h = today.getHours();
 				var m = today.getMinutes();
 				var s = today.getSeconds();
+				if (h > 12) h -= 12;
 				m = checkTime(m);
 				s = checkTime(s);
-				document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+				document.getElementById('time').innerHTML
+					= h + ":" + m + ":" + s;
 				var t = setTimeout(startTime, 500);
 			}
 			function checkTime(i) {
-				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				if (i < 10) {i = "0" + i}; // add zero in front of numbers < 10
 				return i;
 			}
-		</script>
-		<script type="text/javascript">
+
 			// reload once every hour
 			var timeout = setTimeout("location.reload(true);", 60 * 60 * 1000);
 			function resetTimeout() {
 				clearTimeout(timeout);
 				timeout = setTimeout("location.reload(true);", 60 * 60 * 1000);
 			}
+
 		</script>
 
 		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
