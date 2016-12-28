@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import tempfile
 import urllib.request
 import json
 import time
@@ -10,7 +11,7 @@ import datetime
 API_KEY_DIR = '/keys'
 API_KEY_WEATHER = 'openweathermap_api_key.txt'
 
-CACHE_DIR = '/tmp/flask_cache'
+CACHE_DIR = tempfile.mkdtemp(prefix = 'flask_cache_')
 CACHE_LIFESPAN = (60 * 60) # 1 hour
 
 URL_BASE_WEATHER = 'http://api.openweathermap.org/data/2.5/weather?id={}&APPID={}'
