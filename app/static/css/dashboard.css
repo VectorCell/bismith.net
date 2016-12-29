@@ -48,9 +48,9 @@ a:hover {
 	font-family: 'Unispace', monospace;
 	font-size: 512pt;
 }
-@media screen and (max-width: 2160px) {
+@media screen and (max-width: 2560px) {
 	#time {
-		font-size: 312pt;
+		font-size: 340pt;
 	}
 }
 @media screen and (max-width: 1920px) {
