@@ -26,6 +26,12 @@ a:hover {
 	color: #00FF99;
 }
 
+hr {
+	border: 0;
+	height: 2px;
+	background-color: #555555;
+}
+
 .content {
 	width: 100%;
 	background-color: #111111;
@@ -35,6 +41,12 @@ a:hover {
 
 .centered {
 	text-align: center;
+}
+.justifyleft {
+	text-align: left;
+}
+.justifyright {
+	text-align: right;
 }
 
 .templow {

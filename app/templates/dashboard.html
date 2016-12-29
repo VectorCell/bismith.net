@@ -49,33 +49,69 @@
 	<body onload="startTime();">
 		{% include 'elements/navbar.html' %}
 		<div class="content">
+
 			<div class="row">
 				<div class="col-sm-12 centered">
 					<div id="time"></div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-4 centered">
-					<h1><a href="{{ weather['url_more'] }}">{{ weather['name'] }}</a></h1>
-					<p><a href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
-					<p>Sunlight: {{ weather['sunrise'] }} - {{ weather['sunset'] }}</p>
+
+			{% if source == 'OpenWeatherMap' %}
+				<div class="row">
+					<div class="col-sm-4 centered">
+						<h1><a target="_blank" href="{{ weather['url_more'] }}">{{ weather['name'] }}</a></h1>
+						<p><a target="_blank" href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
+						<p>Sunlight: {{ weather['sunrise'] }} - {{ weather['sunset'] }}</p>
+					</div>
+					<div class="col-sm-4 centered">
+						<h2>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h2>
+						<h4 class="temphigh">High: {{ weather['highf'] }}°F ({{ weather['highc'] }}°C)</h4>
+						<h4 class="templow">Low: {{ weather['lowf'] }}°F ({{ weather['lowc'] }}°C)</h4>
+					</div>
+					<div class="col-sm-4 centered">
+						<h2>{{ weather['cond'] }}</h2>
+						<p>{{ weather['cond_detail'] }}</p>
+						<p>Wind speed: {{ weather['wind_speed'] }} mph</p>
+					</div>
 				</div>
-				<div class="col-sm-4 centered">
-					<h2>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h2>
-					<h4 class="temphigh">High: {{ weather['highf'] }}°F ({{ weather['highc'] }}°C)</h4>
-					<h4 class="templow">Low: {{ weather['lowf'] }}°F ({{ weather['lowc'] }}°C)</h4>
+				<div class="row">
+					<div class="col-sm-12 centered">
+						<h6>Updated: {{ weather['updated'] }}</h6>
+					</div>
 				</div>
-				<div class="col-sm-4 centered">
-					<h2>{{ weather['cond'] }}</h2>
-					<p>{{ weather['cond_detail'] }}</p>
-					<p>Wind speed: {{ weather['wind_speed'] }} mph</p>
+			{% elif source == 'NOAA' %}
+				<div class="row">
+					<div class="col-xs-5 justifyright">
+						<h1>{{ weather['name'] }}</h1>
+						<p><a target="_blank" href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
+					</div>
+					<div class="col-xs-2 centered">
+						<p><img src="{{ weather['icon'] }}" alt="current-weather-icon"/></p>
+					</div>
+					<div class="col-xs-5 justifyleft">
+						<h3>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h3>
+						<p>{{ weather['cond'] }}</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 centered">
-					<h6>Updated: {{ weather['updated'] }}</h6>
+				<div class="row">&nbsp;</div>
+				<div class="row">
+					{% for entry in weather['forecast'] %}
+						<div class="col-sm-2 col-md-1 centered">
+							<p><img src="{{ entry['icon'] }}" alt="current-weather-icon"/></p>
+							<h4 class="{{ entry['class'] }}">{{ entry['temp_name'] }}: {{ entry['tempf'] }}°F</h4>
+							<p>{{ entry['time_name'] }}</p>
+							<!-- <p>{{ entry['cond'] }}</p> -->
+							<!-- <p>{{ entry['text'] }}</p> -->
+						</div>
+					{% endfor %}
 				</div>
-			</div>
+			{% else %}
+				<div class="row">
+					<div class="col-sm-12 centered">
+						<p>Unknown source: {{ source }}</p>
+					</div>
+				</div>
+			{% endif %}
 		</div> <!-- end content -->
 		{% include 'elements/footer.html' %}
 	</body>
