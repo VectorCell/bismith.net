@@ -70,14 +70,17 @@ def about_page():
 @app.route('/dashboard')
 def dashboard_page():
 	if request.args.get('source') == 'owm':
-		source = 'OpenWeatherMap'
-		data = dashboard.get_owm()
+		return render_template('dashboard.html',
+		                       source = 'OpenWeatherMap',
+		                       weather = dashboard.get_owm())
 	else:
-		source = 'NOAA'
-		data = dashboard.get_noaa()
-	return render_template('dashboard.html',
-	                       source = source,
-	                       weather = data)
+		layout = request.args.get('layout')
+		if not layout:
+			layout = 'today_top'
+		return render_template('dashboard.html',
+		                       source = 'NOAA',
+		                       weather = dashboard.get_noaa(),
+		                       layout = layout)
 
 
 @app.route('/upload', methods=('GET', 'POST'))

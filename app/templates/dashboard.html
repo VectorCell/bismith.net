@@ -79,7 +79,33 @@
 						<h6>Updated: {{ weather['updated'] }}</h6>
 					</div>
 				</div>
-			{% elif source == 'NOAA' %}
+			{% elif source == 'NOAA' and layout == 'today_top' %}
+				<div class="row">
+					<div class="col-xs-5 justifyright">
+						<h1>{{ weather['name'] }}</h1>
+						<p><a target="_blank" href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
+					</div>
+					<div class="col-xs-2 centered">
+						<p><img src="{{ weather['icon'] }}" alt="current-weather-icon"/></p>
+					</div>
+					<div class="col-xs-5 justifyleft">
+						<h1>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h1>
+						<p>{{ weather['cond'] }}</p>
+					</div>
+				</div>
+				<div class="row">&nbsp;</div>
+				<div class="row">
+					{% for entry in weather['forecast'] %}
+						<div class="col-sm-2 col-md-1 centered">
+							<p><img src="{{ entry['icon'] }}" alt="current-weather-icon"/></p>
+							<h4 class="{{ entry['class'] }}">{{ entry['temp_name'] }}: {{ entry['tempf'] }}°F</h4>
+							<p>{{ entry['time_name'] }}</p>
+							<!-- <p>{{ entry['cond'] }}</p> -->
+							<!-- <p>{{ entry['text'] }}</p> -->
+						</div>
+					{% endfor %}
+				</div>
+			{% elif source == 'NOAA' and layout == 'today_side' %}
 				<div class="row">
 					<div class="col-xs-4 col-sm-3 col-lg-2">
 						<div class="row">
@@ -106,7 +132,11 @@
 			{% else %}
 				<div class="row">
 					<div class="col-sm-12 centered">
-						<p>Unknown source: {{ source }}</p>
+						<h1>Unknown variables:</h1>
+						<ul>
+							<li>source: {{ source }}</li>
+							<li>layout: {{ layout }}</li>
+						</ul>
 					</div>
 				</div>
 			{% endif %}
