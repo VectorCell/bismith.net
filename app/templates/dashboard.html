@@ -81,29 +81,27 @@
 				</div>
 			{% elif source == 'NOAA' %}
 				<div class="row">
-					<div class="col-xs-5 justifyright">
-						<h1>{{ weather['name'] }}</h1>
-						<p><a target="_blank" href="{{ weather['url_map'] }}">{{ weather['coord'] }}</a></p>
-					</div>
-					<div class="col-xs-2 centered">
-						<p><img src="{{ weather['icon'] }}" alt="current-weather-icon"/></p>
-					</div>
-					<div class="col-xs-5 justifyleft">
-						<h1>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h1>
-						<p>{{ weather['cond'] }}</p>
-					</div>
-				</div>
-				<div class="row">&nbsp;</div>
-				<div class="row">
-					{% for entry in weather['forecast'] %}
-						<div class="col-sm-2 col-md-1 centered">
-							<p><img src="{{ entry['icon'] }}" alt="current-weather-icon"/></p>
-							<h4 class="{{ entry['class'] }}">{{ entry['temp_name'] }}: {{ entry['tempf'] }}°F</h4>
-							<p>{{ entry['time_name'] }}</p>
-							<!-- <p>{{ entry['cond'] }}</p> -->
-							<!-- <p>{{ entry['text'] }}</p> -->
+					<div class="col-xs-4 col-sm-3 col-lg-2">
+						<div class="row">
+							<div class="col-xs-12 centered">
+								<img class="weathericon" src="{{ weather['icon'] }}" title="{{ weather['cond'] }}"/>
+								<h1><a target="_blank" href="{{ weather['url_map'] }}">{{ weather['name'] }}</a></h1>
+								<h3>{{ weather['tempf'] }}°F ({{ weather['tempc'] }}°C)</h3>
+								<p>{{ weather['cond'] }}</p>
+							</div>
 						</div>
-					{% endfor %}
+					</div>
+					<div class="col-xs-8 col-sm-9 col-lg-10">
+						<div class="row">
+							{% for entry in weather['forecast'] %}
+								<div class="col-xs-3 col-sm-2 col-md-2 col-lg-1 centered">
+									<p><img class="weathericon" src="{{ entry['icon'] }}" title="{{ entry['text'] }}"/></p>
+									<h4 class="{{ entry['class'] }}">{{ entry['temp_name'] }}: {{ entry['tempf'] }}°F</h4>
+									<h5>{{ entry['time_name'] }}</h5>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
 				</div>
 			{% else %}
 				<div class="row">

@@ -8,7 +8,7 @@ body {
 	color: white;
 }
 @media screen and (max-width: 1024px) {
-	body { padding-top: 80px; }
+	body { padding-top: 0px; }
 }
 
 pre {
@@ -54,6 +54,9 @@ hr {
 }
 .temphigh {
 	color: #f23725;
+}
+.weathericon {
+	width: 100%;
 }
 
 #time {

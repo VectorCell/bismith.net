@@ -74,6 +74,14 @@ STATES = ('Alabama',
           'Wisconsin',
           'Wyoming')
 
+DAYS = (('Sunday',    'Sun', 'S'),
+        ('Monday',    'Mon', 'M'),
+        ('Tuesday',   'Tue', 'T'),
+        ('Wednesday', 'Wed', 'W'),
+        ('Thursday',  'Thu', 'Th'),
+        ('Friday',    'Fri', 'F'),
+        ('Saturday',  'Sat', 'Sa'))
+
 
 def ctof(c):
 	return (c * 1.8) + 32
@@ -272,9 +280,12 @@ def get_noaa(lat = '30.358474196237566', lon = '-97.74917148132334'):
 		item['class'] = 'templow'
 		if item['temp_name'] == 'High':
 			item['class'] = 'temphigh'
+		for day in DAYS:
+			if item['time_name'].startswith(day[0]):
+				item['time_name'] = day[1] + item['time_name'][len(day[0]):]
 	icon = 'http://forecast.weather.gov/newimages/large/' + data['currentobservation']['Weatherimage']
 	clean = {
-		'name':      cityname + ', ' + data['currentobservation']['state'],
+		'name':      cityname,# + ', ' + data['currentobservation']['state'],
 		'coord_lat': float(data['currentobservation']['latitude']),
 		'coord_lon': float(data['currentobservation']['longitude']),
 		'tempf':     int(data['currentobservation']['Temp']),
