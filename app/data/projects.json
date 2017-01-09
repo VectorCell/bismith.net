@@ -1,14 +1,12 @@
 [
 	{
 		"id": 6,
-		"name": "teensy-audio-viz",
+		"name": "netjobs",
 		"author": 1,
 		"description" : [
-			"An audio visualizer using a Teensy 3.1, which has a 32-bit ARM Cortex-M4 @ 72 MHz with 64k RAM.",
-			"Requires <code>gcc-arm-none-eabi</code> and <a href=\"https://github.com/PaulStoffregen/teensy_loader_cli\"><code>teensy_loader_cli</code></a>, which itself needs <code>libusb-dev</code>.",
-			"In certain versions of Ubuntu, you may need to use <code>gcc-arm-embedded</code> instead if you an error about <code>nano.specs</code>:",
-			"<pre>sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi\nsudo add-apt-repository ppa:team-gcc-arm-embedded/ppa\nsudo apt-get update\nsudo apt-get install gcc-arm-embedded</pre>",
-			"This is currently a work in progress. The plan is to turn it into a visualizer that pulses an array of LEDs according to a frequency band of the stereo audio signal input. This will require DSP."
+			"This is a tool for distributing and coordinating jobs on multiple machines over a network.",
+			"Currently, each available host must be on a separate line of <code>hosts.txt</code>, and each job must be on a separate line of <code>jobs.txt</code>. If each job consists of multiple commands, they must still be on the same line, separated by a semicolon.",
+			"I originally created this to facilitate using multiple computers to work on encoding several video files at the same time using <a href=\"https://ffmpeg.org/\">ffmpeg</a>"
 		]
 	},
 	{
