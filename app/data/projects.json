@@ -6,7 +6,7 @@
 		"description" : [
 			"This is a tool for distributing and coordinating jobs on multiple machines over a network.",
 			"Currently, each available host must be on a separate line of <code>hosts.txt</code>, and each job must be on a separate line of <code>jobs.txt</code>. If each job consists of multiple commands, they must still be on the same line, separated by a semicolon.",
-			"I originally created this to facilitate using multiple computers to work on encoding several video files at the same time using <a href=\"https://ffmpeg.org/\">ffmpeg</a>"
+			"I originally created this to facilitate using multiple computers to work on encoding several video files at the same time using <a href=\"https://ffmpeg.org/\">ffmpeg</a>."
 		]
 	},
 	{
