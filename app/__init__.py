@@ -159,5 +159,24 @@ def send_zfs_alert():
 	return jsonify(status)
 
 
+@app.route('/api/arrival')
+def send_zfs_alert():
+	valid_hostname_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.'
+	hostname = ''.join(c for c in request.args.get('hostname') if c in valid_hostname_chars)
+	message = '{} arrived'.format(hostname)
+	try:
+		import base64
+		import smtplib
+		sender = base64.b64decode('WkZTLkFMRVJUQGJpc21pdGgubmV0').decode('UTF-8')
+		receiver = base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')
+		smtpObj = smtplib.SMTP('localhost')
+		smtpObj.sendmail(sender, [receivers], message)
+		status = {'success': True, 'message': message, 'sender': sender,
+		          'receivers': receivers}
+	except Exception as ex:
+		status = {'success': False, 'error': str(ex)}
+	return jsonify(status)
+
+
 if __name__ == '__main__':
 	app.run(host='10.0.0.3', port=8888)
