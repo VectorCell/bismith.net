@@ -160,7 +160,7 @@ def send_zfs_alert():
 
 
 @app.route('/api/arrival')
-def send_zfs_alert():
+def arrival():
 	valid_hostname_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.'
 	hostname = ''.join(c for c in request.args.get('hostname') if c in valid_hostname_chars)
 	message = '{} arrived'.format(hostname)
