@@ -161,7 +161,7 @@ def send_zfs_alert():
 
 @app.route('/api/arrival')
 def arrival():
-	valid_hostname_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.'
+	valid_hostname_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.-_'
 	hostname_raw = request.args.get('hostname')
 	try:
 		hostname = ''.join(c for c in hostname_raw if c in valid_hostname_chars)
