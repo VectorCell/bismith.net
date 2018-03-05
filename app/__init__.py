@@ -142,6 +142,13 @@ def static_proxy(path):
 	return app.send_static_file(path)
 
 
+@app.route('/api/ip')
+def get_ip_addr():
+	data = {}
+	data['ip_addr'] = request.environ['REMOTE_ADDR']
+	return jsonify(data)
+
+
 @app.route('/api/sendzfsalert')
 def send_zfs_alert():
 	try:
@@ -180,4 +187,4 @@ def arrival():
 
 
 if __name__ == '__main__':
-	app.run(host='10.0.0.3', port=8888)
+	app.run(host='172.16.0.3', port=8888)
