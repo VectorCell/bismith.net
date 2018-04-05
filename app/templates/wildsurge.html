@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Upload - Brandon Smith</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script>
+			function go_to_wild_surge() {
+				num = document.getElementById('usurgenum').value;
+				window.location.href='/wildsurge?num=' + num;
+			}
+			$(document).ready(function() {
+				$('#usurgenum').keydown(function(e) {
+					if (e.which === 13) {
+						go_to_wild_surge()
+						return false;
+					}
+				});
+			});
+		</script>
+
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/upload.css">
+	</head>
+
+	<body>
+		{% include 'elements/navbar.html' %}
+		<div class="content">
+
+			<div class="row">
+				
+			</div>
+
+			<!-- wild surge list -->
+			<hr >
+			<div class="row">
+				<div class="col-sm-12">
+					<h1><a href='/wildsurge'>Wild Surge Table</a></h1>
+					<p>&nbsp;</p>
+					<p>
+						<label for="uname">Enter wild surge value: </label>
+						<input type="text" id="usurgenum" name="surgenum">
+						<button onclick="go_to_wild_surge();">Go</button>
+					</p>
+				</div>
+			</div>
+			<hr >
+			<div class="row">
+				<div class="col-sm-12">
+					<table>
+						{% for surge in surgelist %}
+							<tr>
+								<td style="text-align: right"><code style="color: black">{{ surge['num'] }}</code></td>
+								<td>&nbsp;&nbsp;&nbsp;</td>
+								<td style="text-align: left"><code style="color: black">{{ surge['text'] }}</code></td>
+							</tr>
+						{% else %}
+							<tr>
+								<td style="text-align: right"><code style="color: black">{{ surgenum }}</code></td>
+								<td>&nbsp;&nbsp;&nbsp;</td>
+								<td style="text-align: left"><code style="color: black">{{ surgetext }}</code></td>
+							</tr>
+						{% endfor %}
+					</table>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<div class="col-sm-12">
+					<p>
+						Using wild surges from <a href="https://drive.google.com/drive/folders/0B3Jok3IwR5wjc1VnWlVJMHlnMDg">The Net Libram of Random Magical Effects v2</a></p>
+				</div>
+			</div>
+			<!-- end wild surge list -->
+
+		</div>
+		{% include 'elements/footer.html' %}
+	</body>
+
+</html>

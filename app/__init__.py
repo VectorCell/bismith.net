@@ -25,6 +25,9 @@ app.config['UPLOAD_DIR'] = UPLOAD_DIR
 app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024
 
 
+GLOBAL_CACHE = {}
+
+
 @app.route('/')
 @app.route('/index')
 @app.route('/home')
@@ -133,6 +136,35 @@ def uploaded_file():
 		return redirect(url_for('upload_page'))
 	else:
 		return redirect('/uploads/' + filename)
+
+
+@app.route('/wildsurge')
+def wildsurge():
+	import os 
+	dir_path = os.path.dirname(os.path.realpath(__file__))
+	print(dir_path)
+	if 'surgelist' not in GLOBAL_CACHE:
+		surgelist = []
+		with open(dir_path + "/data/wildsurges.txt") as file:
+			for line in file:
+				line = line.strip()
+				tokens = line.split(" ")
+				num = tokens[0]
+				text = " ".join(tokens[1:])
+				surgelist.append(
+					{
+						'num': num,
+						'text': text,
+					})
+		GLOBAL_CACHE['surgelist'] = surgelist
+	if request.args.get('num'):
+		num = request.args.get('num')
+		while len(num) < 4:
+			num = "0" + num
+		return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
+	else:
+		
+		return render_template('wildsurge.html', surgelist=GLOBAL_CACHE['surgelist'])
 
 
 @app.route('/<path:path>')
