@@ -162,8 +162,8 @@ def wildsurge():
 			num = "0" + num
 		return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
 	else:
-		
-		return render_template('wildsurge.html', surgelist=GLOBAL_CACHE['surgelist'])
+		return render_template('wildsurge.html')
+		# return render_template('wildsurge.html', surgelist=GLOBAL_CACHE['surgelist'])
 
 
 @app.route('/<path:path>')

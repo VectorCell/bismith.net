@@ -62,11 +62,14 @@
 								<td style="text-align: left"><code style="color: black">{{ surge['text'] }}</code></td>
 							</tr>
 						{% else %}
-							<tr>
-								<td style="text-align: right"><code style="color: black">{{ surgenum }}</code></td>
-								<td>&nbsp;&nbsp;&nbsp;</td>
-								<td style="text-align: left"><code style="color: black">{{ surgetext }}</code></td>
-							</tr>
+							{% if surgenum is defined %}
+								<tr>
+									<td style="text-align: right"><code style="color: black">{{ surgenum }}</code></td>
+									<td>&nbsp;&nbsp;&nbsp;</td>
+									<td style="text-align: left"><code style="color: black">{{ surgetext }}</code></td>
+								</tr>
+							{% else %}
+							{% endif %}
 						{% endfor %}
 					</table>
 				</div>
