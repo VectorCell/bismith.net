@@ -142,11 +142,12 @@ def uploaded_file():
 def wildsurge():
 	import os 
 	dir_path = os.path.dirname(os.path.realpath(__file__))
-	data = ""
-	with open(dir_path + "/data/wildsurges.txt") as file:
-		for line in file:
-			data += line
-	return data
+	# data = ""
+	# with open(dir_path + "/data/wildsurges.txt") as file:
+	# 	for line in file:
+	# 		line = line.decode().encode('utf-8')
+	# 		data += line
+	# return data
 	if 'surgelist' not in GLOBAL_CACHE:
 		surgelist = []
 		with open(dir_path + "/data/wildsurges.txt") as file:
