@@ -160,7 +160,10 @@ def wildsurge():
 		num = request.args.get('num')
 		while len(num) < 4:
 			num = "0" + num
-		return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
+		if int(num) < 0 or int(num) > 9999:
+			return render_template('wildsurge.html', invalidnum=True)
+		else:
+			return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
 	else:
 		return render_template('wildsurge.html')
 		# return render_template('wildsurge.html', surgelist=GLOBAL_CACHE['surgelist'])

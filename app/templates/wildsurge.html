@@ -68,7 +68,11 @@
 									<td>&nbsp;&nbsp;&nbsp;</td>
 									<td style="text-align: left"><code style="color: black">{{ surgetext }}</code></td>
 								</tr>
-							{% else %}
+							{% elif invalidnum is defined %}
+								<tr>
+									<td></td>
+									<td>Error: invalid number!</td>
+								</tr>
 							{% endif %}
 						{% endfor %}
 					</table>
