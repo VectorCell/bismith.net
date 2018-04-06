@@ -17,15 +17,15 @@ import dashboard
 ALLOW_FILE_DELETION = False
 
 
+GLOBAL_CACHE = {}
+
+
 app = Flask(__name__)
 
 
 UPLOAD_DIR = os.path.realpath(__file__)[:-len('__init__.py')] + 'static/uploads'
 app.config['UPLOAD_DIR'] = UPLOAD_DIR
 app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024
-
-
-GLOBAL_CACHE = {}
 
 
 @app.route('/')
@@ -142,7 +142,11 @@ def uploaded_file():
 def wildsurge():
 	import os 
 	dir_path = os.path.dirname(os.path.realpath(__file__))
-	print(dir_path)
+	data = ""
+	with open(dir_path + "/data/wildsurges.txt") as file:
+		for line in file:
+			data += line
+	return data
 	if 'surgelist' not in GLOBAL_CACHE:
 		surgelist = []
 		with open(dir_path + "/data/wildsurges.txt") as file:
