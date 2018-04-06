@@ -140,19 +140,15 @@ def uploaded_file():
 
 @app.route('/wildsurge')
 def wildsurge():
-	import os 
-	dir_path = os.path.dirname(os.path.realpath(__file__))
-	# data = ""
-	# with open(dir_path + "/data/wildsurges.txt") as file:
-	# 	for line in file:
-	# 		line = line.decode().encode('utf-8')
-	# 		data += line
-	# return data
 	if 'surgelist' not in GLOBAL_CACHE:
+		import os
+		import string
+		dir_path = os.path.dirname(os.path.realpath(__file__))
+		printable = set(string.printable)
 		surgelist = []
 		with open(dir_path + "/data/wildsurges.txt") as file:
 			for line in file:
-				line = line.decode().encode('utf-8')
+				filter(lambda x: x in printable, line)
 				line = line.strip()
 				tokens = line.split(" ")
 				num = tokens[0]
