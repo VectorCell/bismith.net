@@ -143,6 +143,8 @@ def wildsurge():
 	if 'surgelist' not in GLOBAL_CACHE:
 		import os
 		import string
+		import sys
+		sys.setdefaultencoding('utf-8')
 		dir_path = os.path.dirname(os.path.realpath(__file__))
 		printable = set(string.printable)
 		surgelist = []
