@@ -151,6 +151,7 @@ def wildsurge():
 		surgelist = []
 		with open(dir_path + "/data/wildsurges.txt") as file:
 			for line in file:
+				line = line.decode().encode('utf-8')
 				line = line.strip()
 				tokens = line.split(" ")
 				num = tokens[0]
