@@ -144,26 +144,35 @@ def wildsurge():
 		import os
 		dir_path = os.path.dirname(os.path.realpath(__file__))
 		surgelist = []
+		surgenum = 0
 		with open(dir_path + "/data/wildsurges.txt", encoding="utf-8") as file:
 			for line in file:
 				line = line.strip()
 				tokens = line.split(" ")
-				num = tokens[0]
+				num = tokens[0][-4:]
 				text = " ".join(tokens[1:])
 				surgelist.append(
 					{
 						'num': num,
 						'text': text,
 					})
+				print("{:04} :: added {} -> {}".format(surgenum, surgelist[-1]['num'], surgelist[-1]['text']))
+				surgenum += 1
 		GLOBAL_CACHE['surgelist'] = surgelist
 	if request.args.get('num'):
 		num = request.args.get('num')
-		while len(num) < 4:
-			num = "0" + num
-		if int(num) < 0 or int(num) > 9999:
-			return render_template('wildsurge.html', invalidnum=True)
+		if num == "all":
+			surgelist = GLOBAL_CACHE['surgelist']
+			return render_template('wildsurge.html', surgelist=surgelist)
 		else:
-			return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
+			digits = "0123456789"
+			num = "".join(c for c in num if c in digits)
+			while len(num) < 4:
+				num = "0" + num
+			if int(num) < 0 or int(num) > 9999:
+				return render_template('wildsurge.html', invalidnum=True)
+			else:
+				return render_template('wildsurge.html', surgenum=num, surgetext=GLOBAL_CACHE['surgelist'][int(num)]['text'])
 	else:
 		return render_template('wildsurge.html')
 		# return render_template('wildsurge.html', surgelist=GLOBAL_CACHE['surgelist'])
