@@ -4,6 +4,7 @@ import sys
 import os
 import time
 import datetime
+import json
 
 from flask import Flask, render_template, jsonify, request, redirect, url_for, abort
 from werkzeug.utils import secure_filename
@@ -12,6 +13,7 @@ from models import User, Project
 import blog
 import projects
 import dashboard
+import landing
 
 
 ALLOW_FILE_DELETION = False
@@ -68,6 +70,15 @@ def resume_page():
 @app.route('/about')
 def about_page():
 	return render_template('about.html')
+
+
+@app.route('/landing')
+def landing_page():
+	dir_path = os.path.dirname(os.path.realpath(__file__))
+	with open(dir_path + '/data/landing.json', encoding='utf-8') as file:
+		data = json.load(file)
+	print(data)
+	return render_template('landing.html', data=data, text=json.dumps(data, indent=4))
 
 
 @app.route('/dashboard')
@@ -141,7 +152,6 @@ def uploaded_file():
 @app.route('/wildsurge')
 def wildsurge():
 	if 'surgelist' not in GLOBAL_CACHE:
-		import os
 		dir_path = os.path.dirname(os.path.realpath(__file__))
 		surgelist = []
 		surgenum = 0
