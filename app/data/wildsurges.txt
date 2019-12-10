@@ -1,4 +1,4 @@
-0000 The nearest star explodes in a massive supemova
+0000 The nearest star explodes in a massive supernova
 0001 1/2 of caster's body turns to stone
 0002 1/2 of caster's body turns to sodium, the other 1/2 turns to ice
 0003 random magic item within 30' of caster explodes
@@ -8,7 +8,7 @@
 0007 daisy grows from caster's head, may be pruned without harm
 0008 Idl() of caster's fingers turn to steel
 0009 Idl() sparrow eggs tumble from caster's mouth
-0010 Idl 00 small, hannless holes appear in caster's body
+0010 Idl 00 small, harmless holes appear in caster's body
 0011 Id100 young children claim to be the caster's offspring
 0012 Idl 000 flies swarm from caster's mouth whenever he tells a lie
 0013 Id4 people of same race/opposite sex fall in love with caster
@@ -53,7 +53,7 @@
 0052 All air between I ' and 10' of caster turns to iron
 0053 All air between I ' and 10' of caster turns to water
 0054 All air between I ' and 20' of caster turns to fire
-0055 All air within I ' of caster tums to chlorine gas
+0055 All air within I ' of caster turns to chlorine gas
 0056 All allies appear identical to caster for d12 rounds
 0057 All allies appear identical to target for d4 rounds
 0058 All architecture within 120' of caster is leveled
@@ -86,8 +86,8 @@
 0085 All enemies appear identical to caster for d4 rounds
 0086 All enemies within 15 feet of caster are turned to cast iron
 0087 All external facial features of caster disappear
-0088 All fat in caster's body tums to water: nerve cells, etc.
-0089 All flesh on caster's face tums invisible when he smiles
+0088 All fat in caster's body turns to water: nerve cells, etc.
+0089 All flesh on caster's face turns invisible when he smiles
 0090 All foes teleported d6 miles in random direction
 0091 All foliage within 30' of caster grows 3'
 0092 All food and drink tastes utterly bland to the caster
@@ -97,12 +97,12 @@
 0096 All gold carried by caster becomes as hard as steel
 0097 All gold canied by caster increases in weight by IOOX
 0098 All gold canied by caster melts at 320 Fahrenheit
-0099 All gold canied by caster tums to fool's gold
-0100 All gold carried by caster tums to lead
+0099 All gold canied by caster turns to fool's gold
+0100 All gold carried by caster turns to lead
 0101 All gold carried by caster turns to platinum
 0102 All gold pieces carried by caster tum to goldfish
 0103 All ground within 60' of caster is Greased, as spell
-0104 All ground within 60' of caster tums to glass, 10' deep
+0104 All ground within 60' of caster turns to glass, 10' deep
 0105 All items carried by caster affected as by the spell Item
 0106 All items carried by caster affected as by There/Not There
 0107 All items carried by caster age 1000 years
@@ -144,7 +144,7 @@
 0143 All items can-ied by caster turn to water
 0144 All items owned by caster teleport to him from his home
 0145 All items owned by caster turn invisible
-0146 All magic weapons within 30' of caster vanish for Id20 tums
+0146 All magic weapons within 30' of caster vanish for Id20 turns
 0147 All matter within 60' of caster becomes invisible for d4 rounds
 0148 All meat tastes blood-raw to the caster
 0149 All metal on or within caster turns to wood
@@ -169,11 +169,11 @@
 0168 All trees within 100 yards of caster are tumed to cast iron
 0169 All trees within 30 feet of caster burst into flame
 0170 All trees within 60' of caster uproot and walk away
-0171 All water between I ' and 10' of caster tums to fire
-0172 All water between I ' and 100' of caster tums to air
+0171 All water between I ' and 10' of caster turns to fire
+0172 All water between I ' and 100' of caster turns to air
 0173 All water carried by caster boils, increasing volume by 1600X
 0174 All weapons within 60' of caster become ethereal for d8 rounds
-0175 All weapons within 60' of caster turn invisible for Id4 tums
+0175 All weapons within 60' of caster turn invisible for Id4 turns
 0176 All who see caster believe him to be a criminal
 0177 All who see caster believe him to be a harbinger of great ill
 0178 All who see caster believe him to be a Lich
@@ -183,8 +183,8 @@
 0182 All within 90' of caster check INT or forget who the caster is
 0183 All wood on or within caster turns to metal
 0184 All writing in caster's spellbook appears backward
-0185 All writing in caster's spellbook tums blurry
-0186 All m•iting in caster's spellbook tums invisible
+0185 All writing in caster's spellbook turns blurry
+0186 All m•iting in caster's spellbook turns invisible
 0187 Alternating strips of caster rendered invisible for d8 rounds
 0188 An illusiona1Y sign labeled "leper" hangs above caster's head
 0189 An illusionary sign labeled "Wizard" hangs above caster's head
@@ -202,7 +202,7 @@
 0201 Any glass carried by caster turns to transparent steel
 0202 Any magic now affecting caster lasts until he ends it
 0203 Any magic, good or bad, now affecting the caster is Dispelled
-0204 Any metal worn by caster tums to opaque glass
+0204 Any metal worn by caster turns to opaque glass
 0205 Any money now carried by caster doubles in quantity
 0206 Any potions can-ied by caster become poisonous
 0207 Any potions carried by caster carry the intended spell effect
@@ -232,17 +232,17 @@
 0231 Any water carried by caster tastes like gasoline and really is
 0232 Any water carried by caster tastes like gasoline but is pure
 0233 Any water canied by caster tastes pure but is gasoline
-0234 Any water canied by caster tums invisible
-0235 Any water canied by caster tums to acid (Ultimate Solvent)
+0234 Any water canied by caster turns invisible
+0235 Any water canied by caster turns to acid (Ultimate Solvent)
 0236 Any water carried by caster turns to blood
 0237 Any water carried by caster turns to brine
-0238 Any water canied by caster tums to crystal ooze
-0239 Any water canied by caster tums to ice; may burst containers
-0240 Any water canied by caster tums to maple syrup
+0238 Any water canied by caster turns to crystal ooze
+0239 Any water canied by caster turns to ice; may burst containers
+0240 Any water canied by caster turns to maple syrup
 0241 Any water carried by caster turns to mercury
 0242 Any water carried by caster turns to roast beef gravy
-0243 Any water canied by caster tums to solid steel
-0244 Any water canied by caster tums to steam of equal volume
+0243 Any water canied by caster turns to solid steel
+0244 Any water canied by caster turns to steam of equal volume
 0245 Any Wishes thus far used by caster are nullified
 0246 Any wood worn by caster falls off him, takes root, and grows
 0247 Anyone injuring the caster in the next round Vanishes
@@ -653,7 +653,7 @@
 0652 Caster cannot cast spells unless barefoot
 0653 Caster cannot cast spells unless he carries a small flame
 0654 Caster cannot cast spells unless he crosses his fingers
-0655 Caster cannot cast spells unless he first tums in a Circle
+0655 Caster cannot cast spells unless he first turns in a Circle
 0656 Caster cannot cast spells unless he holds a pebble in his mouth
 0657 Caster cannot cast spells unless he pokes himself with a needle
 0658 Caster cannot cast spells unless he puts his thumbs in his ears
@@ -858,7 +858,7 @@
 0857 Caster explodes as a Fireball of Hit Dice equal to 2x his Level
 0858 Caster explodes pennanently when hit points fall to 1/2 total
 0859 Caster explodes under every Full Moon; refonns at dawn
-0860 Caster explodes; reforms 2d20 tums later unharmed
+0860 Caster explodes; reforms 2d20 turns later unharmed
 0861 Caster exudes chlorine gas whenever he casts a spell
 0862 Caster faints at the sight of his own blood
 0863 Caster faints at the sight of his own reflection
@@ -1579,17 +1579,17 @@
 1578 Caster Saves vs Death or skull shrinks by half, causing death
 1579 Caster Saves vs Magic or becomes a duplicate of the target
 1580 Caster Saves vs Petrify or petrifies on seeing his reflection
-1581 Caster Saves vs Petriö' or tums to air
+1581 Caster Saves vs Petriö' or turns to air
 1582 Caster Saves vs Petrify or turns to clay
 1583 Caster Saves vs Petrify or turns to lifeless diamond
 1584 Caster Saves vs Petrify or turns to mithral
 1585 Caster Saves vs Petrify or turns to mud
-1586 Caster Saves vs Petriö' or tums to non-sentient platinum
+1586 Caster Saves vs Petriö' or turns to non-sentient platinum
 1587 Caster Saves vs Petrify or turns to sentient gold
 1588 Caster Saves vs Petrify or turns to steel
 1589 Caster Saves vs Petrify or turns to stone and crumbles
 1590 Caster Saves vs Petrify or turns to water
-1591 Caster Saves vs Petriö' or tums to wood
+1591 Caster Saves vs Petriö' or turns to wood
 1592 Caster says "Tah-dah!" after each spell he casts
 1593 Caster sealed in a bubble which air cannot penetrate
 1594 Caster seeks his long lost twin sibling (who might not exist)
@@ -1646,7 +1646,7 @@
 1645 Caster speaks in a booming voice when he tries to whisper
 1646 Caster speaks in a whisper whenever he tells a lie
 1647 Caster speaks in rhyme; spellcasting impossible
-1648 Caster speaks in three-part hannony for d8 tums
+1648 Caster speaks in three-part hannony for d8 turns
 1649 Caster speaks shocking blasphemies in the presence of clergy
 1650 Caster speaks through his ears and hears through his mouth
 1651 Caster spends Idl() rounds ridiculing his best friend
@@ -1675,7 +1675,7 @@
 1674 Caster strikes his thumb whenever he uses a hammer
 1675 Caster stntck as by Magic Missile each time he hears his name
 1676 Caster stutters through time, existing only every other round
-1677 Caster sucks his thumb like an infant for Id4 tums
+1677 Caster sucks his thumb like an infant for Id4 turns
 1678 Caster suddenly doesn't believe in magic
 1679 Caster suddenly finds himself inside a 55-gallon steel chum
 1680 Caster suddenly finds himself standing within an igloo
@@ -1709,7 +1709,7 @@
 1708 Caster teleports randomly whenever he hears or speaks his name
 1709 Caster teleports to nearest dragon's horde for I d8 rounds
 1710 Caster teleports to the place he slept the previous night
-1711 Caster teleports to the place of his birth, retums in d4 days
+1711 Caster teleports to the place of his birth, returns in d4 days
 1712 Caster tells outrageous lies in the presence of royalty
 1713 Caster tends to giggle at inappropriate times
 1714 Caster thinks a big bad wolf wants to blow his house down
@@ -2031,7 +2031,7 @@
 2030 Caster thinks that the stars are getting closer all the time
 2031 Caster thinks that water is in short supply and must be hoarded
 2032 Caster thinks that water is poisonous
-2033 Caster thinks that water tums to diamond at 320 Fahrenheit
+2033 Caster thinks that water turns to diamond at 320 Fahrenheit
 2034 Caster thinks that, somewhere, his clone has become sentient
 2035 Caster thinks the intended spell affects him & not the target
 2036 Caster thinks the next corpse he sees is his own
@@ -2048,24 +2048,24 @@
 2047 Caster tumbles tln•ough rift into Elemental Earth
 2048 Caster tumbles through rift into Elemental Fire
 2049 Caster tumbles through rift into Elemental Water
-2050 Caster tums ethereal when reduced to 5 hit points
-2051 Caster tums inside out; Saves vs Death or dies
-2052 Caster tums into an ambulatory plant of similar shape
-2053 Caster tums into immobile granite
+2050 Caster turns ethereal when reduced to 5 hit points
+2051 Caster turns inside out; Saves vs Death or dies
+2052 Caster turns into an ambulatory plant of similar shape
+2053 Caster turns into immobile granite
 2054 Caster turns into immobile iron
-2055 Caster tums into immobile wood
-2056 Caster tums into target under every Full Moon
-2057 Caster tums Invisible and is rendered mute
-2058 Caster tums invisible when he closes his eyes
+2055 Caster turns into immobile wood
+2056 Caster turns into target under every Full Moon
+2057 Caster turns Invisible and is rendered mute
+2058 Caster turns invisible when he closes his eyes
 2059 Caster turns to a statue while he sleeps and reverts on waking
-2060 Caster tums to a tree when exposed to direct sunlight
-2061 Caster tums to glass for d4 rounds
-2062 Caster tums to iron d6 rounds, retains mobility and HP (AC -4)
+2060 Caster turns to a tree when exposed to direct sunlight
+2061 Caster turns to glass for d4 rounds
+2062 Caster turns to iron d6 rounds, retains mobility and HP (AC -4)
 2063 Caster turns to sand
 2064 Caster turns to smoke each time he comes within I O' of flame
-2065 Caster tums to steam under every Full Moon
-2066 Caster tums to stone and reverts every other round
-2067 Caster tums to stone when exposed to direct sunlight
+2065 Caster turns to steam under every Full Moon
+2066 Caster turns to stone and reverts every other round
+2067 Caster turns to stone when exposed to direct sunlight
 2068 Caster turns to stone when not exposed to direct sunlight
 2069 Caster understands the universe a little better: +1 to Wisdom
 2070 Caster utters shocking blasphemy when he enters a church
@@ -2083,7 +2083,7 @@
 2082 Caster wakes each day as if splashed by a bucket of water
 2083 Caster wakes each day at the bottom of a small crater
 2084 Caster wakes each day believing he's just been resunected
-2085 Caster wakes each day blind for 6d10 tums
+2085 Caster wakes each day blind for 6d10 turns
 2086 Caster wakes each day blood-soaked as from a vicious battle
 2087 Caster wakes each day covered by honey and ants
 2088 Caster wakes each day covered by peas and carrots
@@ -2127,7 +2127,7 @@
 2126 Caster's anger manifests as a little raincloud over his head
 2127 Caster's arm is bent 900 halfway between his wrist and elbow
 2128 Caster's arms and legs vanish for IdlO rounds
-2129 Caster's arms are stricken totally numb for 2d10 tums
+2129 Caster's arms are stricken totally numb for 2d10 turns
 2130 Caster's arms grow to the size of his legs
 2131 Caster's attributes are halved for Id12 hours
 2132 Caster's big toes can become prehensile at will
@@ -2169,8 +2169,8 @@
 2168 Caster's clothing smells like a skunk died in it
 2169 Caster's clothing turns invisible whenever he casts a spell
 2170 Caster's clothing turns to cellophane
-2171 Caster's clothing tums to plastic
-2172 Caster's clothing tums to porcelain
+2171 Caster's clothing turns to plastic
+2172 Caster's clothing turns to porcelain
 2173 Caster's cramum is transparent like smoked glass
 2174 Caster's cranium seems to be attached by screws
 2175 Caster's current clothes protect against bludgeons
@@ -2219,12 +2219,12 @@
 2218 Caster's hands become invisible to him
 2219 Caster's hands cannot be burned by nonmagical fire
 2220 Caster's hands fuse together at the palms
-2221 Caster's hands lock in their current position for Id10 tums
+2221 Caster's hands lock in their current position for Id10 turns
 2222 Caster's hands rotate 3600 whenever he casts a spell
 2223 Caster's hands vanish until tomorrow afternoon
 2224 Caster's head appears to be a few feet away while he sleeps
 2225 Caster's head appears to have been cut off and reattached
-2226 Caster's head flashes like a disco ball for ld4 tums
+2226 Caster's head flashes like a disco ball for ld4 turns
 2227 Caster's head is a featureless ovoid while he sleeps
 2228 Caster's head rings like a church bell Id12 times
 2229 Caster's head rotates 3600 whenever he casts a spell
@@ -2330,7 +2330,7 @@
 2329 Caster's spellbook is highly poisonous to anyone but him
 2330 Caster's spellbook is poisonous to him for ld4 days
 2331 Caster's spells are accompanied by bright, flashing lights
-2332 Caster's staff tums into a saxophone
+2332 Caster's staff turns into a saxophone
 2333 Caster's stomach rumbles when in the presence of royalty
 2334 Caster's Strength briefly drops 50% after casting a spell
 2335 Caster's tears are flammable
@@ -2397,8 +2397,8 @@
 2396 Caster's armor and weapons become ethereal for d10 rounds
 2397 Caster's armor or clothing leaps from his body and is sentient
 2398 Caster's armor turns to silk (AC 10)
-2399 Caster's annor tums to snow
-2400 Caster's annor tums to steam
+2399 Caster's annor turns to snow
+2400 Caster's annor turns to steam
 2401 Caster's arms and legs exchange places
 2402 Caster's arms become rubbery like tentacles
 2403 Caster's arms begin flapping like a dragonfly's wings
@@ -2437,17 +2437,17 @@
 2436 Caster's blood turns to acid but functions normally
 2437 Caster's blood turns to chocolate as it leaves his body
 2438 Caster's blood turns to gold where it is spilt
-2439 Caster's blood tums to magnesium dust and ignites
-2440 Caster's blood tums to mercury
+2439 Caster's blood turns to magnesium dust and ignites
+2440 Caster's blood turns to mercury
 2441 Caster's IDOd turns to Universal Solvent
 2442 Caster's body appears to face opposite direction
-2443 Caster's body becomes hollow and skin tums to 1/4" steel
+2443 Caster's body becomes hollow and skin turns to 1/4" steel
 2444 Caster's body doubles in size but his mass is halved
-2445 Caster's body except circulatory system tums transparent
+2445 Caster's body except circulatory system turns transparent
 2446 Caster's body except his circulatory system turns invisible
 2447 Caster's body except his digestive system turns invisible
 2448 Caster's body except his muscular system turns invisible
-2449 Caster's body except his nervous system tums Invisible
+2449 Caster's body except his nervous system turns Invisible
 2450 Caster's body except his respiratory system turns invisible
 2451 Caster's body halves its size but his mass doubles
 2452 Caster's body is fireproof; takes damage but will not combust
@@ -2457,12 +2457,12 @@
 2456 Caster's body shrinks by 75%, but his head remains normal sized
 2457 Caster's body temperature falls for dl() rounds
 2458 Caster's body temperature rises d100 for d20 rounds
-2459 Caster's body tums ethereal; head is solid, seeming to float
+2459 Caster's body turns ethereal; head is solid, seeming to float
 2460 Caster's body turns matte-black, but his shadow is full-color
 2461 Caster's body turns to a coherent, ambulatory water-form
-2462 Caster's body tums to air and blows away
-2463 Caster's body tums to earth and crumbles
-2464 Caster's body tums to fire and burns itself out
+2462 Caster's body turns to air and blows away
+2463 Caster's body turns to earth and crumbles
+2464 Caster's body turns to fire and burns itself out
 2465 Caster's body turns to water and drains away
 2466 Caster's bones become adamantite
 2467 Caster's bones become as flexible as rubber
@@ -2598,36 +2598,36 @@
 2597 Caster's clothing is transparent
 2598 Caster's clothing looks like it's been shredded
 2599 Caster's clothing provides 15% Magic Resistance
-2600 Caster's clothing tums inside out
+2600 Caster's clothing turns inside out
 2601 Caster's clothing turns invisible to those of opposite sex
 2602 Caster's clothing turns invisible under moonlight
-2603 Caster's clothing tums invisible when he casts a spell
-2604 Caster's clothing tums pitch black at twilight
-2605 Caster's clothing tums to an exquisitely tailored tuxedo
+2603 Caster's clothing turns invisible when he casts a spell
+2604 Caster's clothing turns pitch black at twilight
+2605 Caster's clothing turns to an exquisitely tailored tuxedo
 2606 Caster's clothing turns to cobwebs
-2607 Caster's clothing tums to green slime
-2608 Caster's clothing tums to honey
-2609 Caster's clothing tums to ice
-2610 Caster's clothing tums to lead
+2607 Caster's clothing turns to green slime
+2608 Caster's clothing turns to honey
+2609 Caster's clothing turns to ice
+2610 Caster's clothing turns to lead
 2611 Caster's clothing turns to one-piece full field plate armor
-2612 Caster's clothing tums to paper
-2613 Caster's clothing tums to skin
-2614 Caster's clothing tums to snow
-2615 Caster's clothing tums to steam
+2612 Caster's clothing turns to paper
+2613 Caster's clothing turns to skin
+2614 Caster's clothing turns to snow
+2615 Caster's clothing turns to steam
 2616 Caster's clothing turns to stone
-2617 Caster's clothing tums to tight-fitting chain mail
-2618 Caster's clothing tums to wood
+2617 Caster's clothing turns to tight-fitting chain mail
+2618 Caster's clothing turns to wood
 2619 Caster's comage assembles into an intricate 3-D collage
 2620 Caster's coinage becomes worthless
 2621 Caster's coinage teleports into a random ally's possession
 2622 Caster's coinage turns invisible
 2623 Caster's consciousness is pushed into the body of a random ally
-2624 Caster's Constitution is increased by I for d4 tums
+2624 Caster's Constitution is increased by I for d4 turns
 2625 Caster's Constitution is reduced by d6 for d6 days
 2626 Caster's current location spouts water for dl() days
 2627 Caster's current worst enemy forgives him
 2628 Caster's Dexterity increases by 2 when naked
-2629 Caster's Dexterity is increased by I for d4 tums
+2629 Caster's Dexterity is increased by I for d4 turns
 2630 Caster's Dexterity is reduced by d6 for d6 days
 2631 Caster's digestive system fills with air
 2632 Caster's digestive system fills with powdered lead
@@ -2700,11 +2700,11 @@
 2699 Caster's dominant hand smolders when he casts a spell
 2700 Caster's dominant hand sweats uncontrollably
 2701 Caster's dominant hand tries to strangle him
-2702 Caster's dominant hand tums invisible to all but him
+2702 Caster's dominant hand turns invisible to all but him
 2703 Caster's dominant hand turns invisible to him
 2704 Caster's dominant hand turns the color of whatever it handles
-2705 Caster's dominant hand tums to glass
-2706 Caster's dominant hand tums to rubber
+2705 Caster's dominant hand turns to glass
+2706 Caster's dominant hand turns to rubber
 2707 Caster's dominant hand weighs as much as he does
 2708 Caster's dominant hand will not tolerate the wearing of gloves
 2709 Caster's ears and eyes exchange places
@@ -2834,7 +2834,7 @@
 2833 Caster's gender changes daily
 2834 Caster's gender changes every time he casts a spell
 2835 Caster's gender changes when he loses 5()% of his hit points
-2836 Caster's gender fluctuates each turn for the next d100 tums
+2836 Caster's gender fluctuates each turn for the next d100 turns
 2837 Caster's gloves become glaives
 2838 Caster's gloves turn to boots
 2839 Caster's gloves turn to cast iron
@@ -2849,7 +2849,7 @@
 2848 Caster's hair falls out
 2849 Caster's hair falls out each morning; regrows each night
 2850 Caster's hair falls out each night; regrows each morning
-2851 Caster's hair freezes solid for d4 tums
+2851 Caster's hair freezes solid for d4 turns
 2852 Caster's hair grows I inch per hour for the next three days
 2853 Caster's hair grows Id4 inches every time he casts a spell
 2854 Caster's hair grows Id4 inches every time he sneezes
@@ -2897,12 +2897,12 @@
 2896 Caster's head seems to double in size whenever he casts a spell
 2897 Caster's head seems to double in size whenever he is angered
 2898 Caster's head shrinks by 75%; likely to be looked at strangely
-2899 Caster's head snaps off and rolls away; retums in d12 rounds
+2899 Caster's head snaps off and rolls away; returns in d12 rounds
 2900 Caster's head turns cylindrical
 2901 Caster's head turns ethereal; body is solid, seemingly undead
 2902 Caster's head turns invisible
 2903 Caster's head turns to a cube
-2904 Caster's head tums to a sphere
+2904 Caster's head turns to a sphere
 2905 Caster's head vanishes d6 rounds; body is lifeless in this time
 2906 Caster's heart stops beating but his blood still flows normally
 2907 Caster's heartbeat is audible to all within 10 yards
@@ -2956,7 +2956,7 @@
 2955 Caster's INT rises to 19, but his WIS falls by a like amount
 2956 Caster's INT, WIS, & CHR switch with DEX, STR, & CON
 2957 Caster's Intelligence doubles for d4 rounds
-2958 Caster's Intelligence is halved for d4 tums
+2958 Caster's Intelligence is halved for d4 turns
 2959 Caster's Intelligence is increased by I for d4 turns
 2960 Caster's Intelligence is reduced by d6 for d6 days
 2961 Caster's jawbone teleports I mile away
@@ -3000,7 +3000,7 @@
 2999 Caster's natural AC drops to 5, but has a fatal Achilles' heel
 3000 Caster's natural AC is rerolled (I dlO) each moming
 3001 Caster's natural AC rises to 15
-3002 Caster's neck tums invisible; head appears to levitate
+3002 Caster's neck turns invisible; head appears to levitate
 3003 Caster's neck vanishes; head is perched upon shoulders
 3004 Caster's nervous system replaced by wires and electronics
 3005 Caster's nervous system vanishes, but caster is unharmed
@@ -3164,12 +3164,12 @@
 3163 Caster's principal weapon smells of rotting meat
 3164 Caster's principal weapon teleports to his principal dwelling
 3165 Caster's prmcipal weapon turns into a shovel
-3166 Caster's prmcipal weapon tums into aluminum
+3166 Caster's prmcipal weapon turns into aluminum
 3167 Caster's principal weapon turns to butter
 3168 Caster's principal weapon turns to clay
 3169 Caster's principal weapon turns to rubber
 3170 Caster's prmcipal weapon turns to silk and cannot cause damage
-3171 Caster's prmcipal weapon tums to snow
+3171 Caster's prmcipal weapon turns to snow
 3172 Caster's principal weapon turns to steam
 3173 Caster's principal weapon turns to wax
 3174 Caster's prmcipal weapon vanishes next time it strikes someone
@@ -3222,7 +3222,7 @@
 3221 Caster's shadow rises up and tries to strangle him
 3222 Caster's shield becomes enchanted with the Frisky Chest Spell
 3223 Caster's shield turns to adamantite; gains +2
-3224 Caster's shield tums to glass; receives -6 until broken
+3224 Caster's shield turns to glass; receives -6 until broken
 3225 Caster's shield turns to ice; receives -3 until broken
 3226 Caster's shield turns to mithral; gains +1
 3227 Caster's short-term memory is lost but recalls long-past events
@@ -3233,7 +3233,7 @@
 3232 Caster's skeleton glows through his skin whenever he is angry
 3233 Caster's skeleton polymorphs to that of another random creature
 3234 Caster's skeleton rotates 3600; caster reduced to 1 1--1P
-3235 Caster's skeleton tums to diamond but retains usefulness
+3235 Caster's skeleton turns to diamond but retains usefulness
 3236 Caster's skin alternates red-to-white as his heart beats
 3237 Caster's skin and armor merge; undetectable but AC is retained
 3238 Caster's skin appears scorched like he was bumed at the stake
@@ -3271,15 +3271,15 @@
 3270 Caster's skin sprouts quills like a goose
 3271 Caster's skin sprouts quills like a porcupine
 3272 Caster's skin teleports three feet to the left
-3273 Caster's skin tums inside out on his body
-3274 Caster's skin tums to black pudding
-3275 Caster's skin tums to bone; lasts d4 rounds
+3273 Caster's skin turns inside out on his body
+3274 Caster's skin turns to black pudding
+3275 Caster's skin turns to bone; lasts d4 rounds
 3276 Caster's skin turns to cloth
-3277 Caster's skin tums to flexible silver-like material
+3277 Caster's skin turns to flexible silver-like material
 3278 Caster's skin turns to grey ooze
 3279 Caster's skin turns to mithral for dl() rounds; AC-3, MR O
 3280 Caster's skin turns to snow
-3281 Caster's skin tums to steel while he sleeps
+3281 Caster's skin turns to steel while he sleeps
 3282 Caster's skull becomes Ethereal
 3283 Caster's skull is dimly visible through his flesh
 3284 Caster's skull shrinks by 50%; Save vs Death or die
@@ -3303,10 +3303,10 @@
 3302 Caster's spellbook is teleported back to his librmy
 3303 Caster's spellbook slams shut if anyone but him reads it
 3304 Caster's spellbook starts flapping and tries to fly away
-3305 Caster's spellbook tums invisible for d4 days
-3306 Caster's spellbook tums to a mundane item when not in use
-3307 Caster's spellbook tums to lead
-3308 Caster's spellbook tums to steam
+3305 Caster's spellbook turns invisible for d4 days
+3306 Caster's spellbook turns to a mundane item when not in use
+3307 Caster's spellbook turns to lead
+3308 Caster's spellbook turns to steam
 3309 Caster's spellbook turns to steel
 3310 Caster's spellbook, when open, also acts as a portable hole
 3311 Caster's spells function as if cast by someone twice his level
@@ -3314,12 +3314,12 @@
 3313 Caster's spilt blood swarms with maggots and mosquitoes
 3314 Caster's spine doubles its length
 3315 Caster's spine fuses into a single bone
-3316 Caster's spine tums to rubber
+3316 Caster's spine turns to rubber
 3317 Caster's spine vanishes
 3318 Caster's staff is replaced by a Winchester 30.06 with one shell
 3319 Caster's staff turns to an umbrella
 3320 Caster's stomach becomes Bag of Holding; starves in d4 days
-3321 Caster's Strength is increased by I for d4 tums
+3321 Caster's Strength is increased by I for d4 turns
 3322 Caster's Strength is reduced by d6 for d6 days
 3323 Caster's teeth appear blood-red
 3324 Caster's teeth chatter constantly while he is asleep
@@ -3353,7 +3353,7 @@
 3352 Caster's tongue looks like a blade whenever he is angry
 3353 Caster's tongue loops into a knot; spellcasting impossible
 3354 Caster's tongue turns to a snake (-d4 to CHA)
-3355 Caster's tongue tums to glass
+3355 Caster's tongue turns to glass
 3356 Caster's tongue turns to leather
 3357 Caster's tongue vanishes
 3358 Caster's torso (not head or legs) rotates 1800 without harm
@@ -3378,7 +3378,7 @@
 3377 Caster's touch causes normal metals to tarnish
 3378 Caster's touch causes normal plants to wilt
 3379 Caster's touch causes trees to bear poisonous fruit
-3380 Caster's touch causes water to become carbonated for I d10 tums
+3380 Caster's touch causes water to become carbonated for I d10 turns
 3381 Caster's touch causes water to become poisonous for Id10 turns
 3382 Caster's touch causes water to taste soapy for Idl() turns
 3383 Caster's touch causes wax to melt into suggestive shapes
@@ -3387,8 +3387,8 @@
 3386 Caster's touch robs plants of their color
 3387 Caster's touch turns clothing inside-out
 3388 Caster's touch warps nonnal plants and wood
-3389 Caster's treasure tums to snow
-3390 Caster's treasure tums to steam
+3389 Caster's treasure turns to snow
+3390 Caster's treasure turns to steam
 3391 Caster's veins and arteries turn to iron
 3392 Caster's vision extends only 100 yards in any direction
 3393 Caster's visual perceptions are inverted; left-to-right
@@ -3411,7 +3411,7 @@
 3410 Caster's weapon turns to adamantite; gains +2
 3411 Caster's weapon turns to chocolate
 3412 Caster's weapon turns to mithral; gains +1
-3413 Caster's weapon tums to sponge; can cause no damage
+3413 Caster's weapon turns to sponge; can cause no damage
 3414 Caster's weapon twists into a knot
 3415 Caster's weight doubles
 3416 Caster's weight fluctuates by +50% every turn
@@ -3426,7 +3426,7 @@
 3425 Clothing of caster and random ally is magically exchanged
 3426 Clothing of caster and random foe is magically exchanged
 3427 Clothing of caster and target is magically exchanged
-3428 Clothing tums invisible ld6 hours after the caster puts it on
+3428 Clothing turns invisible ld6 hours after the caster puts it on
 3429 Color Spray strikes the caster
 3430 Colored beads tumble from the caster's mouth when he lies
 3431 Colored lights dance around the caster's head when he speaks
@@ -3478,7 +3478,7 @@
 3477 Food tastes like bile to the caster
 3478 For dl() days, caster need only eat 1/2 the normal amount of food
 3479 For d4 hours, caster's touch turns all precious metal to lead
-3480 For d4 turns, caster's touch tums all solid matter to gold
+3480 For d4 turns, caster's touch turns all solid matter to gold
 3481 For d6 days, caster can find secret doors 9 out of 10 times
 3482 For d6 hours, all within 10' of caster covet his spellbook
 3483 For d6 hours, caster's touch turns all gems to colored ice
@@ -3682,7 +3682,7 @@
 3681 Next fire set by caster speaks insults to him while it burns
 3682 Next fire set by caster summons hostile air elementals
 3683 Next fire set by caster throws heat in only one direction
-3684 Next fire set by caster tums to iron after three turns
+3684 Next fire set by caster turns to iron after three turns
 3685 Next fire set by caster wafts its smoke to follow him
 3686 Next fire set by caster warms only those facing away from it
 3687 Next fire set by caster whispers horrible things to him
@@ -3746,12 +3746,12 @@
 3745 Next meal prepared by caster tastes like the last meal he ate
 3746 Next meal prepared by caster turns to already-digested matter
 3747 Next meal prepared by caster turns to blood-red snow
-3748 Next meal prepared by caster tums to bone
+3748 Next meal prepared by caster turns to bone
 3749 Next meal prepared by caster turns to fat and gristle
 3750 Next meal prepared by caster turns to gold
 3751 Next meal prepared by caster turns to mercury
 3752 Next meal prepared by caster turns to sand
-3753 Next meal prepared by caster tums to steel
+3753 Next meal prepared by caster turns to steel
 3754 Next meal prepared by caster turns to stone
 3755 Next meal prepared by caster turns to wood
 3756 Next nonmagical blade touched by caster becomes magical
@@ -3770,12 +3770,12 @@
 3769 Next pond caster enters grants him water-only breathing
 3770 Next pond caster enters transports him to Elemental Water
 3771 Next pond caster enters turns him to water (Save vs Death)
-3772 Next pond caster enters tums to glass for dl 0 rounds
-3773 Next pond caster enters tums to mud in 20d10 rounds
+3772 Next pond caster enters turns to glass for dl 0 rounds
+3773 Next pond caster enters turns to mud in 20d10 rounds
 3774 Next pond caster enters vanishes; returns in d20 days
 3775 Next pond caster enters whirls in a spiral until he exits
 3776 Next profanity spoken by caster becomes a vile, living entity
-3777 Next spell used by caster retums to strike him in d10 rounds
+3777 Next spell used by caster returns to strike him in d10 rounds
 3778 Next summoning by caster summons present target
 3779 Next summoning spell employed by caster brings skunks instead
 3780 Next Summoning transports caster to location of the summoned
@@ -3807,8 +3807,8 @@
 3806 Occupants of next mine caster enters think he's made of gold
 3807 Occupants of next mine caster enters think he's the owner
 3808 Ominous thunder rumbles overhead when caster says his name
-3809 One half of caster's body tums invisible for dlO rounds
-3810 One of caster's arms tums to cheese
+3809 One half of caster's body turns invisible for dlO rounds
+3810 One of caster's arms turns to cheese
 3811 One of caster's eyes perceives things to be upside-down
 3812 One of caster's teeth doubles in size
 3813 One of caster's arms is doubled in length, the other is halved
@@ -3817,9 +3817,9 @@
 3816 One of caster's dimensions (height, breadth, depth) is halved
 3817 One of caster's feet enlarges to his full height
 3818 One of caster's limbs (random) doubles in length
-3819 One of caster's limbs tums invisible for 2d12 hours
-3820 One of caster's possessions tums out to be a priceless antique
-3821 One of caster's possessions tums out to be a stolen artifact
+3819 One of caster's limbs turns invisible for 2d12 hours
+3820 One of caster's possessions turns out to be a priceless antique
+3821 One of caster's possessions turns out to be a stolen artifact
 3822 One plant within 60' of caster becomes a Shambling Mound
 3823 Oxygen becomes violently toxic to the caster
 3824 Pack animals shrug off their loads when the caster is nearby
@@ -3955,7 +3955,7 @@
 3954 When caster dies, his corpse rises into the sky and is gone
 3955 When caster dies, his corpse rises like a revenant and attacks
 3956 When caster dies, his corpse smells ofroses instead of decay
-3957 When caster dies, his corpse tums inside out
+3957 When caster dies, his corpse turns inside out
 3958 When caster dies, his corpse turns to chocolate
 3959 When caster dies, his corpse turns to stone
 3960 When caster dies, his corpse vanishes
@@ -4046,7 +4046,7 @@
 4045 A wealthy investor wants to buy the target's nervous system
 4046 Air cannot come within I O feet of target's principal weapon
 4047 Air Elemental resides in target's lungs; inhalation unnecessary
-4048 All air between I ' and 10' of target tums to iron
+4048 All air between I ' and 10' of target turns to iron
 4049 All air between I ' and 10' of target turns to water
 4050 All air between I ' and 20' of target turns to fire
 4051 All air within I ' of target turns to chlorine gas
@@ -4074,14 +4074,14 @@
 4073 All enemies within 15 feet of target are turned to cast Iron
 4074 All extemal facial features of target disappear
 4075 All fat in target's body turns to water: nerves, brain, etc.
-4076 All flesh on target's face tums invisible when he smiles
+4076 All flesh on target's face turns invisible when he smiles
 4077 All foliage within 30' of target grows 3'
 4078 All food and drink tastes utterly bland to the target
 4079 All free water within 120' of target turns to molasses
 4080 All gems carried by target are turned to ice
 4081 All gems carried by target combust
 4082 All ground within 60' of target is Greased, as spell
-4083 All ground within 60' oftarget tums to glass, 10' deep
+4083 All ground within 60' oftarget turns to glass, 10' deep
 4084 All items can-ied by target affected as by the spell Item
 4085 All items carried by target affected as by There/Not There
 4086 All items carried by target age 1000 years
@@ -4129,7 +4129,7 @@
 4128 All of target's clothing now bears his monogram
 4129 All of target's fingers are broken
 4130 All of target's attributes drop to 3
-4131 All of target's equipment tums to platinum
+4131 All of target's equipment turns to platinum
 4132 All of target's gold pieces turn to teeth
 4133 All of target's precious metal turns to soap
 4134 All plants and wildlife appear sickly to the target
@@ -4148,8 +4148,8 @@
 4147 All the bones disappear from the target's hands and feet
 4148 All trees within 100 yards of target are turned to cast iron
 4149 All trees within 60' of target uproot and walk away
-4150 All water between I ' and 100' of target tums to air
-4151 All water between I ' and 100' of target tums to fire
+4150 All water between I ' and 100' of target turns to air
+4151 All water between I ' and 100' of target turns to fire
 4152 All weapons within 60' of target become ethereal for d8 rounds
 4153 All who see target believe he precedes a great plague
 4154 All who see target believe him to be a basilisk
@@ -4166,8 +4166,8 @@
 4165 All within 90' of target check INT or forget who the target is
 4166 All wood on or within target turns to metal
 4167 All writing in target's spellbook appears backward
-4168 All writing in target's spellbook tums blurry
-4169 All m•iting in target's spellbook tums Invisible
+4168 All writing in target's spellbook turns blurry
+4169 All m•iting in target's spellbook turns Invisible
 4170 Alternating strips of target rendered invisible for d8 rounds
 4171 An illusionary sign labeled "Buffoon" hangs above target's head
 4172 An illusionary sign labeled "leper" hangs above target's head
@@ -4182,10 +4182,10 @@
 4181 Any Curse afflicting target is Removed
 4182 Any fires lit in the target's home cannot be put out by him
 4183 Any food prepared by target is poisonous to him
-4184 Any glass carried by target tums to transparent steel
+4184 Any glass carried by target turns to transparent steel
 4185 Any magic now affecting target lasts until he ends it
 4186 Any magic, good or bad, now affecting the target is Dispelled
-4187 Any metal worn by target tums to opaque glass
+4187 Any metal worn by target turns to opaque glass
 4188 Any money now carried by target doubles in quantity
 4189 Any potions canied by target become poisonous
 4190 Any potions carried by target cany the intended spell effect
@@ -4216,17 +4216,17 @@
 4215 Any water carried by target tastes like gasoline and really is
 4216 Any water carried by target tastes like gasoline but is pure
 4217 Any water carried by target tastes pure but is gasoline
-4218 Any water carried by target tums invisible
-4219 Any water carried by target tums to acid (Ultimate Solvent)
+4218 Any water carried by target turns invisible
+4219 Any water carried by target turns to acid (Ultimate Solvent)
 4220 Any water carried by target turns to blood
 4221 Any water carried by target turns to brine
-4222 Any water canied by target tums to crystal ooze
-4223 Any water carried by target tums to ice; may burst containers
+4222 Any water canied by target turns to crystal ooze
+4223 Any water carried by target turns to ice; may burst containers
 4224 Any water carried by target turns to maple syrup
 4225 Any water carried by target turns to mercury
-4226 Any water canied by target tums to roast beef gravy
-4227 Any water canied by target tums to solid steel
-4228 Any water carried by target tums to steam of equal volume
+4226 Any water canied by target turns to roast beef gravy
+4227 Any water canied by target turns to solid steel
+4228 Any water carried by target turns to steam of equal volume
 4229 Any Wishes thus far used by target are nullified
 4230 Any wood worn by target falls off him, takes root, and sprouts
 4231 Anyone injuring the target in the next round Vanishes
@@ -4280,7 +4280,7 @@
 4279 Clothing of random ally turns invisible for d6 rounds
 4280 Clothing of target and random ally is magically exchanged
 4281 Clothing of target and random foe is magically exchanged
-4282 Clothing tums Invisible ld6 hours after the target puts it on
+4282 Clothing turns Invisible ld6 hours after the target puts it on
 4283 Cream cheese oozes from the target's nostrils
 4284 Create Water drenches target whenever he speaks his name
 4285 Dany products become poisonous after the target handles them
@@ -4333,12 +4333,12 @@
 4332 For dl() days, target's weight is doubled; MR reduced to 50%
 4333 For dlO days, target's weight is quadrupled; MR reduced to 25%
 4334 For d10 days, target's weight is squared; MR reduced to I
-4335 For d4 hours, target's touch tums all precious metal to lead
-4336 For d4 turns, target's touch tums all solid matter to gold
+4335 For d4 hours, target's touch turns all precious metal to lead
+4336 For d4 turns, target's touch turns all solid matter to gold
 4337 For d6 days, target can find secret doors 9 out of 10 times
 4338 For d6 hours, all within 10' oftarget covet his spellbook
-4339 For d6 hours, target's touch tums all gems to colored ice
-4340 For d6 tums target's gains a bloodhound's olfactory acuity
+4339 For d6 hours, target's touch turns all gems to colored ice
+4340 For d6 turns target's gains a bloodhound's olfactory acuity
 4341 For some reason, the target doesn't think steel can hurt him
 4342 Foul-smelling foam oozes from target's ears while he sleeps
 4343 Fruits and vegetables rot more rapidly in the target's presence
@@ -4395,7 +4395,7 @@
 4394 Invisible bells ring in the air when the target's hit by magic
 4395 Jewelry burns the target like fire
 4396 Last creature killed by target is reanimated and hunts target
-4397 Last spell used by target retums to strike him next round
+4397 Last spell used by target returns to strike him next round
 4398 Leaves and twigs whirl about target like a cyclone
 4399 Left half of target's body ages at 5X normal rate
 4400 Left half of target's body gains +2 Strength
@@ -4531,7 +4531,7 @@
 4530 Next fire set by target speaks insults to the him as it burns
 4531 Next fire set by target summons hostile air elementals
 4532 Next fire set by target throws heat in only one direction
-4533 Next fire set by target tums to iron after three tums
+4533 Next fire set by target turns to iron after three turns
 4534 Next fire set by target wafts its smoke to follow him
 4535 Next fire set by target wails like a banshee for one round
 4536 Next fire set by target warms only those facing away from it
@@ -4584,13 +4584,13 @@
 4583 Next meal prepared by target turns to already-digested matter
 4584 Next meal prepared by target turns to blood-red snow
 4585 Next meal prepared by target turns to bone
-4586 Next meal prepared by target tums to fat and gristle
-4587 Next meal prepared by target tums to gold
+4586 Next meal prepared by target turns to fat and gristle
+4587 Next meal prepared by target turns to gold
 4588 Next meal prepared by target turns to mercury
 4589 Next meal prepared by target turns to sand
 4590 Next meal prepared by target turns to steel
-4591 Next meal prepared by target tums to stone
-4592 Next meal prepared by target tums to wood
+4591 Next meal prepared by target turns to stone
+4592 Next meal prepared by target turns to wood
 4593 Next mirror target passes acts as a Min-or of Opposition
 4594 Next mirror target passes becomes a gate to another plane
 4595 Next minor target passes shatters; may appear to be an omen
@@ -5321,7 +5321,7 @@
 5320 Target explodes as a Fireball of Hit Dice equal to 2x his Level
 5321 Target explodes pennanently when hit points fall to 1/2 total
 5322 Target explodes under every Full Moon; reforms at dawn
-5323 Target explodes; refonns 2d20 tums later unhanned
+5323 Target explodes; refonns 2d20 turns later unhanned
 5324 Target faints at the sight ofhis own blood
 5325 Target faints at the sight of his own reflection
 5326 Target falls asleep and cannot be roused
@@ -6047,12 +6047,12 @@
 6046 Target Saves vs petriö' or petrifies on seeing his reflection
 6047 Target Saves vs Petrify or turns to clay
 6048 Target Saves vs Petrify or turns to glass
-6049 Target Saves vs Petriö' or tums to ice
+6049 Target Saves vs Petriö' or turns to ice
 6050 Target Saves vs Petrify or turns to lifeless diamond
 6051 Target Saves vs Petrify or turns to mithral
 6052 Target Saves vs Petrify or turns to mud
 6053 Target Saves vs Petrify or turns to non-sentient platinum
-6054 Target Saves vs Petriö' or tums to sentient gold
+6054 Target Saves vs Petriö' or turns to sentient gold
 6055 Target Saves vs Petrify or turns to steel
 6056 Target Saves vs Petrify or turns to wood
 6057 Target sealed in a bubble which air cannot penetrable
@@ -6479,13 +6479,13 @@
 6478 Target tumbles through rift into Elemental Earth
 6479 Target tumbles through rift into Elemental Fire
 6480 Target tumbles through rift into Elemental Water
-6481 Target tums ethereal each time he draws his weapon
-6482 Target tums ethereal when reduced to 5 hit points
+6481 Target turns ethereal each time he draws his weapon
+6482 Target turns ethereal when reduced to 5 hit points
 6483 Target turns inside out; Saves vs Death to resist effect or dies
 6484 Target turns into an ambulatory plant of similar shape
 6485 Target turns into caster under every Full Moon
-6486 Target tums into granite
-6487 Target tums into iron
+6486 Target turns into granite
+6487 Target turns into iron
 6488 Target turns into wood
 6489 Target turns invisible and is rendered mute
 6490 Target turns invisible when he closes his eyes
@@ -6591,7 +6591,7 @@
 6590 Target's anger manifests as a little raincloud over his head
 6591 Target's arm is bent 900 halfway between his wrist and elbow
 6592 Target's arms and legs vanish for IdlO rounds
-6593 Target's arms are stricken totally numb for 2d10 tums
+6593 Target's arms are stricken totally numb for 2d10 turns
 6594 Target's arms grow to the size of his legs
 6595 Target's arms polymorph each moming
 6596 Target's attributes are halved for Id12 hours
@@ -6634,7 +6634,7 @@
 6633 Target's clothing resembles a patchwork quilt
 6634 Target's clothing smells like a skunk died in it
 6635 Target's clothing turns to cellophane
-6636 Target's clothing tums to plastic
+6636 Target's clothing turns to plastic
 6637 Target's clothing turns to porcelain
 6638 Target's cranium is transparent like smoked glass
 6639 Target's cranium seems to be attached by screws
@@ -6858,10 +6858,10 @@
 6857 Target's appearance changes to that of a zombie
 6858 Target's armor (or metal gear) heats to 5d10000 for dlO rounds
 6859 Target's armor and weapons become ethereal for dl 0 rounds
-6860 Target's armor tums to silk (AC 10)
-6861 Target's armor tums to snow
+6860 Target's armor turns to silk (AC 10)
+6861 Target's armor turns to snow
 6862 Target's armor turns to steam
-6863 Target's armor tums to wood
+6863 Target's armor turns to wood
 6864 Target's armor/clothing leaps from target and is sentient
 6865 Target's arms and legs exchange places
 6866 Target's arms are broken
@@ -6906,21 +6906,21 @@
 6905 Target's blood seems thick and gummy when it is spilt
 6906 Target's blood smells like skunk musk
 6907 Target's blood teleported out of his body
-6908 Target's blood tums to acid but functions normally
+6908 Target's blood turns to acid but functions normally
 6909 Target's blood turns to chocolate as it leaves his body
 6910 Target's blood turns to gold where it is spilt
-6911 Target's blood tums to lava
-6912 Target's blood tums to mercury
-6913 Target's blood tums to milk
+6911 Target's blood turns to lava
+6912 Target's blood turns to mercury
+6913 Target's blood turns to milk
 6914 Target's blood turns to sand
 6915 Target's blood turns to soap
-6916 Target's blood tums to Universal Solvent
+6916 Target's blood turns to Universal Solvent
 6917 Target's body appears to face opposite direction
 6918 Target's body becomes a Gate to a Lower Outer Plane
 6919 Target's body becomes a humanoid mirror; Immune to gaze attacks
 6920 Target's body becomes hollow and skin turns to 1/4" steel
 6921 Target's body except circulatory system turns transparent
-6922 Target's body except his circulatory system tums invisible
+6922 Target's body except his circulatory system turns invisible
 6923 Target's body except his digestive system turns invisible
 6924 Target's body except his muscular system turns invisible
 6925 Target's body except his nervous system turns invisible
@@ -6933,8 +6933,8 @@
 6932 Target's body shrinks by 75%, but his head remains normal sized
 6933 Target's body temperature falls (1200 for dl() rounds
 6934 Target's body temperature rises for d2() rounds
-6935 Target's body tums matte-black, but his shadow is full-color
-6936 Target's body tums to a coherent, ambulatory water-form
+6935 Target's body turns matte-black, but his shadow is full-color
+6936 Target's body turns to a coherent, ambulatory water-form
 6937 Target's bones are adamantite; max. I HP damage from bludgeons
 6938 Target's bones are glass; min. 8 HP damage from bludgeonings
 6939 Target's bones become as flexible as rubber
@@ -6992,7 +6992,7 @@
 6991 Target's Charisma increases by ld6 for Id10 days
 6992 Target's Charisma increases by 3 when naked
 6993 Target's Charisma increases by 6 when he's struck by magic
-6994 Target's Charisma is increased by I for ld4 tums
+6994 Target's Charisma is increased by I for ld4 turns
 6995 Target's Charisma is reduced by ld6 for ld6 days
 6996 Target's Charisma is reduced by 3
 6997 Target's Charisma is rerolled every morning
@@ -7036,36 +7036,36 @@
 7035 Target's clothing turns around and runs away with him
 7036 Target's clothing turns inside out
 7037 Target's clothing turns invisible to members of opposite sex
-7038 Target's clothing tums invisible under moonlight
-7039 Target's clothing tums invisible when he's hit by magic
+7038 Target's clothing turns invisible under moonlight
+7039 Target's clothing turns invisible when he's hit by magic
 7040 Target's clothing turns pitch black at twilight
 7041 Target's clothing turns to acid
 7042 Target's clothing turns to an exquisitely tailored tuxedo
-7043 Target's clothing tums to blood
-7044 Target's clothing tums to bone
+7043 Target's clothing turns to blood
+7044 Target's clothing turns to bone
 7045 Target's clothing turns to cobweb
 7046 Target's clothing turns to fiberglass
 7047 Target's clothing turns to flowers
-7048 Target's clothing tums to green slime
-7049 Target's clothing tums to honey
+7048 Target's clothing turns to green slime
+7049 Target's clothing turns to honey
 7050 Target's clothing turns to ice
 7051 Target's clothing turns to lead
 7052 Target's clothing turns to one-piece full field plate armor
-7053 Target's clothing tums to other, inappropriate clothing
-7054 Target's clothing tums to paper
+7053 Target's clothing turns to other, inappropriate clothing
+7054 Target's clothing turns to paper
 7055 Target's clothing turns to pitch
 7056 Target's clothing turns to skin
-7057 Target's clothing tums to snow
-7058 Target's clothing tums to Sovereign Glue
+7057 Target's clothing turns to snow
+7058 Target's clothing turns to Sovereign Glue
 7059 Target's clothing turns to steam
 7060 Target's clothing turns to steel wool
-7061 Target's clothing tums to stone
-7062 Target's clothing tums to thick oak bark
-7063 Target's clothing tums to tight-fitting chain mail
+7061 Target's clothing turns to stone
+7062 Target's clothing turns to thick oak bark
+7063 Target's clothing turns to tight-fitting chain mail
 7064 Target's clothing turns to water
 7065 Target's clothig turns to wood
-7066 Target's clothing tums to woven grass
-7067 Target's clothing tums to woven human hair
+7066 Target's clothing turns to woven grass
+7067 Target's clothing turns to woven human hair
 7068 Target's clothing turns to woven magnesium filaments
 7069 Target's clothing turns upside-doun
 7070 Target's clothing twists and constricts his movement
@@ -7074,7 +7074,7 @@
 7073 Target's coinage teleports into a random ally's possession
 7074 Target's coinage turns invisible
 7075 Target's consciousness is pushed into the body of a random ally
-7076 Target's Constitution is increased by I for d4 tums
+7076 Target's Constitution is increased by I for d4 turns
 7077 Target's Constitution is reduced by d6 for d6 days
 7078 Target's cunent worst enemy forgives him
 7079 Target's Dexterity increases by 2 when naked
@@ -7153,7 +7153,7 @@
 7152 Target's dominant hand tries to strangle him
 7153 Target's dominant hand turns invisible to all but him
 7154 Target's dominant hand turns invisible to him
-7155 Target's dominant hand tums the color of whatever it handles
+7155 Target's dominant hand turns the color of whatever it handles
 7156 Target's dominant hand turns to glass
 7157 Target's dominant hand turns to rubber
 7158 Target's dominant hand weighs as much as he does
@@ -7391,9 +7391,9 @@
 7390 Target's home suddenly contains a lifesize portrait of him
 7391 Target's home suddenly has no doors or doorways
 7392 Target's home suddenly has two sub-basements
-7393 Target's home tums to a house of straw
+7393 Target's home turns to a house of straw
 7394 Target's home turns to gingerbread
-7395 Target's home tums to gold
+7395 Target's home turns to gold
 7396 Target's home vanishes without a trace
 7397 Target's illusions automatically disbelieved
 7398 Target's image remains etched into any minor he gazes into
@@ -7419,7 +7419,7 @@
 7418 Target's legs tie in a knot
 7419 Target's legs turn to tree trunks and take root
 7420 Target's legs vanish d6 rounds; body falls to ground, no damage
-7421 Target's Level increases by 2 for d10 tums
+7421 Target's Level increases by 2 for d10 turns
 7422 Target's limbs change proportion to match those of a fish
 7423 Target's limbs change proportion to match those of a giraffe
 7424 Target's limbs change proportion to match those of a gorilla
@@ -7471,8 +7471,8 @@
 7470 Target's nose enlarges whenever he tells a lie
 7471 Target's nose falls off; regrows in d6 days
 7472 Target's nose turns red and spherical
-7473 Target's nose tums spherical and bright red
-7474 Target's nose tums upside down
+7473 Target's nose turns spherical and bright red
+7474 Target's nose turns upside down
 7475 Target's nostrils merge into one (-d4 to Charisma)
 7476 Target's perception of "left" and "right" becomes inverted
 7477 Target's pockets are linked with someone else's (who knows?)
@@ -7608,18 +7608,18 @@
 7607 Target's saliva freezes
 7608 Target's saliva froths like a rabid dog's
 7609 Target's saliva sprays from his mouth like a geyser
-7610 Target's saliva tums phosphorescent
-7611 Target's saliva tums to a 41--ID fire elemental
+7610 Target's saliva turns phosphorescent
+7611 Target's saliva turns to a 41--ID fire elemental
 7612 Target's saliva turns to a 4HD water elemental
 7613 Target's saliva turns to acid; target is unharmed
 7614 Target's saliva turns to blood
-7615 Target's saliva tums to fuel oil
-7616 Target's saliva tums to ink
+7615 Target's saliva turns to fuel oil
+7616 Target's saliva turns to ink
 7617 Target's saliva turns to mercury
 7618 Target's saliva turns to roast beef gravy
 7619 Target's saliva turns to salt
-7620 Target's saliva tums to sand
-7621 Target's saliva tums to Sovereign Glue
+7620 Target's saliva turns to sand
+7621 Target's saliva turns to Sovereign Glue
 7622 Target's saliva turns to Universal Solvent
 7623 Target's Saves "flip" relative to 10; I I becomes 9, etc
 7624 Target's scent is soothing to hounds
@@ -7682,7 +7682,7 @@
 7681 Target's skeleton rotates 3600; target reduced to I HP
 7682 Target's skeleton teleported d4 yards away
 7683 Target's skeleton tries to claw free of his body
-7684 Target's skeleton tums to diamond but retains vitality
+7684 Target's skeleton turns to diamond but retains vitality
 7685 Target's skin alternates red-to-white as his heart beats
 7686 Target's skin and armor merge; looks normal but AC is retained
 7687 Target's skin appears scorched like he was bumecht the stake
@@ -7714,14 +7714,14 @@
 7713 Target's skin sprouts quills like a cactus
 7714 Target's skin sprouts quills like a goose
 7715 Target's skin sprouts quills like a porcupine
-7716 Target's skin tums inside-out
-7717 Target's skin tums to black pudding
-7718 Target's skin tums to bone; lasts d4 rounds
+7716 Target's skin turns inside-out
+7717 Target's skin turns to black pudding
+7718 Target's skin turns to bone; lasts d4 rounds
 7719 Target's skin turns to cloth
-7720 Target's skin tums to flexible gold-like material
-7721 Target's skin tums to grey ooze
-7722 Target's skin tums to mithral for d10 rounds, AC-3,
-7723 Target's skin tums to snow
+7720 Target's skin turns to flexible gold-like material
+7721 Target's skin turns to grey ooze
+7722 Target's skin turns to mithral for d10 rounds, AC-3,
+7723 Target's skin turns to snow
 7724 Target's skin turns to steel while he sleeps
 7725 Target's skull becomes Ethereal
 7726 Target's skull is dimly visible through his flesh
@@ -7739,14 +7739,14 @@
 7738 Target's spellbook becomes sentient, with INT 11+d8
 7739 Target's spellbook starts flapping and tries to fly away
 7740 Target's spellbook turns invisible for d4 days
-7741 Target's spellbook tums to a mundane item when not in use
-7742 Target's spellbook tums to steam
+7741 Target's spellbook turns to a mundane item when not in use
+7742 Target's spellbook turns to steam
 7743 Target's spellbook turns to steel
 7744 Target's spells always rebound on him and harm no one else
 7745 Target's spilt blood swanns with maggots and mosquitoes
 7746 Target's spine doubles its length
 7747 Target's spine fuses into a single bone
-7748 Target's spine tums to rubber
+7748 Target's spine turns to rubber
 7749 Target's spine vanishes
 7750 Target's staff is replaced by a Winchester 30.06, unloaded
 7751 Target's staff turns to an umbrella
@@ -7831,7 +7831,7 @@
 7830 Target's touch causes normal plants to wilt
 7831 Target's touch causes trees to bear poisonous fruit
 7832 Target's touch causes water to become carbonated for Idl O turns
-7833 Target's touch causes water to become poisonous for Idl 0 tums
+7833 Target's touch causes water to become poisonous for Idl 0 turns
 7834 Target's touch causes water to taste soapy for Id10 turns
 7835 Target's touch causes wax to melt into suggestive shapes
 7836 Target's touch causes wounds to seal but restores no hit points
@@ -7839,9 +7839,9 @@
 7838 Target's touch robs plants of their color
 7839 Target's touch turns clothing inside-out
 7840 Target's touch warps normal plants and wood
-7841 Target's treasure tums to snow
-7842 Target's treasure tums to steam
-7843 Target's treasure tums to wood
+7841 Target's treasure turns to snow
+7842 Target's treasure turns to steam
+7843 Target's treasure turns to wood
 7844 Target's veins and arteries turn to iron
 7845 Target's vision extends only 100 yards in any direction
 7846 Target's visual perceptions are inverted, left-to-right
@@ -7866,11 +7866,11 @@
 7865 Target's weapon explodes, causing Id6 damage to all within 10'
 7866 Target's weapon giggles maniacally when it is sheathed
 7867 Target's weapon heats to 4d10000, may melt or combust
-7868 Target's weapon tums inside out
+7868 Target's weapon turns inside out
 7869 Target's weapon turns to adamantite; gains +2
 7870 Target's weapon turns to lead
 7871 Target's weapon turns to mithral; gains +1
-7872 Target's weapon tums to sponge; can cause no damage
+7872 Target's weapon turns to sponge; can cause no damage
 7873 Target's weapon twists into a knot
 7874 Target's weapon vanishes if anyone but him wields it
 7875 Target's weight doubles
@@ -7879,16 +7879,16 @@
 7878 Target's weight is reduced to zero; floats away if not caught
 7879 Target's weight lowers by lbs; if less than O, floats away
 7880 Target's Wisdom exceeds the caster's by Id4
-7881 Target's Wisdom is increased by I for d4 tums
+7881 Target's Wisdom is increased by I for d4 turns
 7882 Target's Wisdom is reduced by d6 for d6 days
 7883 Target's word order is shuffled; verbal spellcasting impossible
 7884 Temperature of target's principal weapon drops to -2600 C
 7885 The flesh of target's hands is invisible for I d8 days
-7886 The ground beneath target's feet tums ethereal
+7886 The ground beneath target's feet turns ethereal
 7887 The ground beneath target's feet turns to an earth elemental
 7888 The ground beneath target's feet turns to lava
 7889 The ground beneath target's feet turns to quicksand
-7890 The ground beneath target's feet tums to water
+7890 The ground beneath target's feet turns to water
 7891 The most valuable item now carried by target disintegrates
 7892 The next creature slain by target rises as his undead slave
 7893 The next town target enters greets him like a long-lost son
@@ -8019,7 +8019,7 @@
 8018 1 random creature nearby is crushed as if on the sea floor
 8019 1 random creature nearby is rendered Timeless while it sleeps
 8020 1 random creature nearby is stretched as though on a rack
-8021 1 random creature nearby tums to gold
+8021 1 random creature nearby turns to gold
 8022 1 random creature within 60 yards is banished to some hell
 8023 1 random creature within 60 yards is welcomed into some heaven
 8024 1 random elemental in area becomes a Prime Material native
@@ -8287,7 +8287,7 @@
 8286 yard radius stinks like a sewer
 8287 yard radius suppresses the emotions of those within it
 8288 yard radius swaps weather conditions with some distant area
-8289 yard radius tums to quicksand, Id10+10 feet deep
+8289 yard radius turns to quicksand, Id10+10 feet deep
 8290 yard radius will erupt like a volcano in Id10 days
 8291 yard sphere is transposed with a distant 60 yard sphere
 8292 8XI O photographs appear of everyone within 60 yards
@@ -8329,7 +8329,7 @@
 8328 A tsunami crashes into the nearest coastline
 8329 A Type V demon appears, intent on killing everyone nearby
 8330 A witch hunt forms in nearby town, seeking death to all wizards
-8331 Acid Storm rams down on a 60 yard radius for 3d6 tums
+8331 Acid Storm rams down on a 60 yard radius for 3d6 turns
 8332 Acrid smoke billows from the nearest well, filling the area
 8333 After ld3 turns, spell becomes ld4x8HD Elemental
 8334 After Id6 turns, a 50-1)ie Fireball detonates at the site
@@ -8418,7 +8418,7 @@
 8417 All canteens within 60 yards fill with blood
 8418 All chain links within 60 yards tum to sausage links
 8419 All chain mail within 60 yards loses 1/2 its links
-8420 All chain mail within 60 yards tums to aluminum
+8420 All chain mail within 60 yards turns to aluminum
 8421 All chain mail within 60 yards turns to plate
 8422 All chain mail within 60 yards turns to porcelain
 8423 All charged magic items in the area discharge on their bearers
@@ -8426,8 +8426,8 @@
 8425 All channs upon creatures within 60 yards are nullified
 8426 All chipmunks in I mile area begin to crave fresh meat
 8427 All chocolate within I mile fills with ants
-8428 All cloth within IdlO miles tums invisible for IdlOO rounds
-8429 All clothing within 60 yards tums invisible
+8428 All cloth within IdlO miles turns invisible for IdlOO rounds
+8429 All clothing within 60 yards turns invisible
 8430 All clouds over I mile radius tum to spider web
 8431 All clouds within 10 miles turn to cotton candy
 8432 All controlled undead within I mile are controlled no longer
@@ -8460,7 +8460,7 @@
 8459 All dogs within I mile change into cats under the full moon
 8460 All dogs within I mile change into humans under the full moon
 8461 All dwarves within I mile grow 6 inches for I week
-8462 All earth and rock within 60 yards tums to water
+8462 All earth and rock within 60 yards turns to water
 8463 All elementals in area are healed of all damage
 8464 All elementals in area are Held until touched by a Prime native
 8465 All elementals in area are returned to their home planes
@@ -8484,7 +8484,7 @@
 8483 All females within 60 yards are suddenly stricken bald
 8484 All females within 60 yards are transfonned into elves
 8485 All females within 60 yards are transparent in firelight
-8486 All females within 60 yards become illusory for Id6 tums
+8486 All females within 60 yards become illusory for Id6 turns
 8487 All females within 60 yards cackle at the sight of blood
 8488 All females within 60 yards can lie with impunity while naked
 8489 All females within 60 yards change their name to Arianna
@@ -8576,8 +8576,8 @@
 8575 All geese within I mile turn to ghosts and haunt their lake
 8576 All glass within 10 yards turns to gold
 8577 All glass within 60 yards is affected by Glassteel
-8578 All glass within 60 yards tums to eggshell
-8579 All glass within 60 yards tums to ice
+8578 All glass within 60 yards turns to eggshell
+8579 All glass within 60 yards turns to ice
 8580 All gold within 60 yards combines into I large mass
 8581 All gold within 60 yards doubles in volume
 8582 All gold within 60 yards heats by 10000
@@ -8587,7 +8587,7 @@
 8586 All gold within 60 yards turns to platinum
 8587 All gold within 60 yards vanishes
 8588 All gold within nearest temple is teleported into the area
-8589 All grass within I mile tums to healthy, fragrant human hair
+8589 All grass within I mile turns to healthy, fragrant human hair
 8590 All grass within 60 yards exudes dust of sneezing and choking
 8591 All grass within 60 yards exudes hallucinogenic gas
 8592 All grass within 60 yards exudes regurgitant gas
@@ -8605,14 +8605,14 @@
 8604 All henchmen within 60 yards must check Morale or flee
 8605 All henchmen within 60 yards suddenly resent their leaders
 8606 All horses within I mile are striped like zebras
-8607 All horses within 60 yards tum to motorcycles for IdlO tums
+8607 All horses within 60 yards tum to motorcycles for IdlO turns
 8608 All Huge spiders within I mile explode
 8609 All in the area lose I point of each ability score for 2d4 days
 8610 All ink within 60 yards becomes wet as though just mitten
 8611 All ink, dry or otherwise, within 60 yards turns to blood
 8612 All insects within 60 yards double in size
 8613 All insects within 60 yards swarm aggressively
-8614 All iron within 20 yards tums to aluminum
+8614 All iron within 20 yards turns to aluminum
 8615 All iron within 20 yards turns to magnesium
 8616 All iron within 60 yards becomes impervious to magnetism
 8617 All lamps and torches within 60 yards burn at 2X brightness
@@ -8665,7 +8665,7 @@
 8664 All males within 60 yards levitate I d4 feet in the air
 8665 All males within 60 yards look identical till sunset tomorrow
 8666 All males within 60 yards lose Id8 hit points
-8667 All males within 60 yards lose all weapon skill for 2d10 tums
+8667 All males within 60 yards lose all weapon skill for 2d10 turns
 8668 All males within 60 yards lose interest in combat for I day
 8669 All males within 60 yards run to a central point & link hands
 8670 All males within 60 yards scream like children for Id4 rounds
@@ -8675,7 +8675,7 @@
 8674 All males within 60 yards spin like tops for I (14 rounds
 8675 All males within 60 yards suddenly grow beards
 8676 All males within 60 yards they see their worst enemy nearby
-8677 All males within 60 yards think their touch tums lead to gold
+8677 All males within 60 yards think their touch turns lead to gold
 8678 All males within 60 yards think they are all dreaming together
 8679 All males within 60 yards think they are distantly related
 8680 All males within 60 yards think they carry some awful plague
@@ -8707,13 +8707,13 @@
 8706 All metal armor within 60 yards shrinks 10%; crushing damage
 8707 All metal armor within 60 yards turns 1800
 8708 All metal armor within 60 yards turns inside out
-8709 All metal armor within 60 yards tums invisible
-8710 All metal armor within 60 yards tums to gold
+8709 All metal armor within 60 yards turns invisible
+8710 All metal armor within 60 yards turns to gold
 8711 All metal armor within 60 yards turns to ice; reverts in I hour
 8712 All metal armor within 60 yards turns to mercury
 8713 All metal armor within 60 yards turns to rubber
-8714 All metal armor within 60 yards tums to stone
-8715 All metal armor within 60 yards tums to uranium
+8714 All metal armor within 60 yards turns to stone
+8715 All metal armor within 60 yards turns to uranium
 8716 All metal armor within 60 yards turns upside down
 8717 All metal within 60 yards appears pitted and rusty but is not
 8718 All metal within 60 yards becomes as pliable as rubber
@@ -8753,10 +8753,10 @@
 8752 All nonliving matter within I mile is coated in a glaze of ice
 8753 All nonliving matter within 60 yards is Disintegrated
 8754 All nonliving wood within I mile begins to grow again
-8755 All nonliving wood within I mile tums to high quality steel
+8755 All nonliving wood within I mile turns to high quality steel
 8756 All nonliving wood within 60 yards turns to bone
 8757 All nonliving wood within 60 yards vanishes
-8758 All nonliving, unowmed matter within 100 feet tums to gold
+8758 All nonliving, unowmed matter within 100 feet turns to gold
 8759 All nonmagic light sources within 60 yards are snuffed
 8760 All nonmagical armor within 60 yards gains +one protection
 8761 All nonmagical clothing within 60 yards combusts
@@ -8868,8 +8868,8 @@
 8867 All spells cast in area function at only 1/2 power
 8868 All spells cast within6() yards have their durations halved
 8869 All spells cast within the next tum function randomly
-8870 All spider web in I mile radius tums to cloud and dissipates
-8871 All spider web in 60 yard radius tums to nylon thread
+8870 All spider web in I mile radius turns to cloud and dissipates
+8871 All spider web in 60 yard radius turns to nylon thread
 8872 All spiders within 50 yards become Huge
 8873 All statues within I mile animate
 8874 All statues within I mile animate and depart
@@ -8983,9 +8983,9 @@
 8982 All undead within 60 yards are struck by lighting
 8983 All undead within 90' cut off from Negative Plane for 5 rounds
 8984 All vegetation within I mile shrinks by 90%
-8985 All vegetation within I mile tums blood-red
-8986 All vegetation within I mile tums carnivorous
-8987 All vegetation within I mile tums invisible
+8985 All vegetation within I mile turns blood-red
+8986 All vegetation within I mile turns carnivorous
+8987 All vegetation within I mile turns invisible
 8988 All vegetation within 100 foot radius is stripped of moisture
 8989 All vegetation within 60 yards crumbles to ash
 8990 All vegetation within 60 yards grows to full size and maturity
@@ -9139,7 +9139,7 @@
 9138 All wood within 60 yards vanishes until sometime tomorrow
 9139 All wooden weapons within 60 yards turn to balsa wood
 9140 All wool within 60 yards ignites
-9141 All worked stone within 60 yards tums to sand
+9141 All worked stone within 60 yards turns to sand
 9142 All writing within 60 yards becomes illegible for ld4 days
 9143 All written text within spell's area of effect turns backward
 9144 All zombies within 60 yards suddenly have no legs
@@ -9163,8 +9163,8 @@
 9162 Any artifacts within I mile decide they've had it and vanish
 9163 Any creatures resurrected in area in the last 5 years are slain
 9164 Any creatures slain in area within last 5 turns are resunected
-9165 Any magical items within 10 yards are inert for Id6 tums
-9166 Any snow within 60 yards tums to diamond dust
+9165 Any magical items within 10 yards are inert for Id6 turns
+9166 Any snow within 60 yards turns to diamond dust
 9167 Any summoned beings within 60 yards do not vanish when freed
 9168 Anyone in armor within 60 yards becomes sharply paranoid
 9169 Anyone in armor within 60 yards can only eat while wearing it
@@ -9194,7 +9194,7 @@
 9193 Anyone in armor within 60 yards must Save or go berserk
 9194 Anyone in armor within 60 yards must Save or go blind
 9195 Anyone in armor within 60 yards removes it in a panic
-9196 Anyone in armor within 60 yards seems naked for I d8 tums
+9196 Anyone in armor within 60 yards seems naked for I d8 turns
 9197 Anyone in armor within 60 yards seems to be of opposite sex
 9198 Anyone in armor within 60 yards suddenly stands next to it
 9199 Anyone in annor within 60 yards switches handedness
@@ -9212,7 +9212,7 @@
 9211 Anyone slain in the last turn within 60 yards is resurrected
 9212 Anyone slain within 60 yards disintegrates upon death
 9213 Anyone within 60 yards resurrected during the last year dies
-9214 Anyone within 60 yards Save vs Spell or be stunned ld3 tums
+9214 Anyone within 60 yards Save vs Spell or be stunned ld3 turns
 9215 Bark of all trees within 1 mile becomes hard as steel
 9216 Bells, chimes, and gongs echo through the area
 9217 Call Lightning hits target point I per turn for next 20 turns
@@ -9309,11 +9309,11 @@
 9308 Nearest 500 lb. stone becomes perfectly spherical
 9309 Nearest 500 1b. stone engulfs creature nearest to it
 9310 Nearest 500 1 stone hurl itself into the sky and vanishes
-9311 Nearest 500 1b. stone tums to 5000 lb. stone
-9312 Nearest 500 1b. stone tums to a Galeb Duhr
-9313 Nearest 500 lb. stone tums to an 8 HD ealth elemental
+9311 Nearest 500 1b. stone turns to 5000 lb. stone
+9312 Nearest 500 1b. stone turns to a Galeb Duhr
+9313 Nearest 500 lb. stone turns to an 8 HD ealth elemental
 9314 Nearest 5()() lb. stone turns to diamond
-9315 Nearest 500 1b. stone tums to steam
+9315 Nearest 500 1b. stone turns to steam
 9316 Nearest banshee is teleported into vicinity for I d10 rounds
 9317 Nearest boat appears m the area
 9318 Nearest bridge collapses
@@ -9332,9 +9332,9 @@
 9331 Nearest castle sinks into the ground ld20 feet
 9332 Nearest castle suffers explosive decompression
 9333 Nearest castle turns to bone
-9334 Nearest castle tums to chocolate
-9335 Nearest castle tums to sand
-9336 Nearest castle tums to steel
+9334 Nearest castle turns to chocolate
+9335 Nearest castle turns to sand
+9336 Nearest castle turns to steel
 9337 Nearest castle vanishes from the Prime Material Plane
 9338 Nearest castle's throne room is piled high with skulls
 9339 Nearest castle's tower becomes volcanically active
@@ -9436,7 +9436,7 @@
 9435 Nearest fire streaks into the sky like a reversed meteor
 9436 Nearest fire takes IHP per round from all within 10' of it
 9437 Nearest Giant is summoned; appears in 2dl 0 rounds
-9438 Nearest goat tums into a boat
+9438 Nearest goat turns into a boat
 9439 Nearest Gold Dragon polymorphs into a butterfly; retains memory
 9440 Nearest Golem becomes a statue of appropriate composition
 9441 Nearest government official is found to be a 5 year old child
@@ -9450,7 +9450,7 @@
 9449 Nearest government official is revealed to have died last year
 9450 Nearest governmental unit collapses amid scandals of wrongdoing
 9451 Nearest hill giant appears at the spell's target point
-9452 Nearest horse tums to a pegasus and flies away
+9452 Nearest horse turns to a pegasus and flies away
 9453 Nearest hourglass becomes a magic-powered quartz digital clock;
 9454 Nearest house appears at the spell's target point
 9455 Nearest house explodes as a 50HD fireball
@@ -9479,7 +9479,7 @@
 9478 Nearest male fears he has been targeted by a fireball spell
 9479 Nearest medusa teleports into the nearest city
 9480 Nearest medusa teleports into the vicinity
-9481 Nearest medusa tums into a nymph (alignment Neutral Good)
+9481 Nearest medusa turns into a nymph (alignment Neutral Good)
 9482 Nearest mining operation unealths a long-buried and evil entity
 9483 Nearest monster of less than 6HD turns to stone
 9484 Nearest mountain bears huge likenesses of the caster and target
@@ -9516,8 +9516,8 @@
 9515 Nearest nymph teleports into vicinity for Id10 rounds
 9516 Nearest nymph turns into a medusa (likely to be somewhat upset)
 9517 Nearest ocean has a direct connection within the nearest well
-9518 Nearest ocean-gomg vessel tums to a submarine
-9519 Nearest ocean-gomg vessel tums to cesium
+9518 Nearest ocean-gomg vessel turns to a submarine
+9519 Nearest ocean-gomg vessel turns to cesium
 9520 Nearest orc's blood appears in the vicinity
 9521 Nearest orc's blood freezes solid
 9522 Nearest paladin acquires Id4 undead followers
@@ -9638,7 +9638,7 @@
 9637 Nearest pond teleports I mile east
 9638 Nearest pond transfonns into a pool of lava
 9639 Nearest pond turns into an above-ground pool
-9640 Nearest pond tums those drinking from it into water
+9640 Nearest pond turns those drinking from it into water
 9641 Nearest pond's floor rises to ground level
 9642 Nearest potion becomes carbonated and tastes like rootbeer
 9643 Nearest potion causes its drinker to change gender
@@ -9692,14 +9692,14 @@
 9691 Nearest river vanishes
 9692 Nearest sea-worthy ship gains the power of flight
 9693 Nearest sea-worthy ship sinks like a stone
-9694 Nearest siege engine tums into a Sherman tank
+9694 Nearest siege engine turns into a Sherman tank
 9695 Nearest spellbook becomes sentient and resents its owner
 9696 Nearest statue becomes a Golem of appropriate composition
 9697 Nearest suit of chain mail is insulated like electrical wire
 9698 Nearest suit of chain mail turns to 24 Karat gold
 9699 Nearest suit of plate annor becomes a deep-sea diving suit
 9700 Nearest suit of plate annor encloses its wearer like a tin can
-9701 Nearest suit of plate armor tums to adamantite
+9701 Nearest suit of plate armor turns to adamantite
 9702 Nearest suit of plate armor turns to silk
 9703 Nearest sunken continent rises to the surface for 3d12 months
 9704 Nearest sunken ship rises to the surface, dry' and good as new
