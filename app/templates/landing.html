@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Landing Page - Brandon Smith</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300,400'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		{% include 'elements/navbar.html' %}
+		<div class="content">
+			<div class="row">
+
+				{% for category in data %}
+					<div class="col-sm-4">
+						<h2>{{category[0]}}</h2>
+						<ul>
+							{% for item in category[1] %}
+								{% if item[1] is iterable and item[1] is not string %}
+									<li>
+										{{item[0]}}
+										<ul>
+											{% for subitem in item[1] %}
+												{% if subitem[1] is iterable and subitem[1] is not string %}
+													<li>
+														{{subitem[0]}}
+														<ul>
+															{% for ssitem in subitem[1] %}
+																<li><a href="{{ssitem[1]}}">{{ssitem[0]}}</a></li>
+															{% endfor %}
+														</ul>
+													</li>
+												{% else %}
+													<li><a href="{{subitem[1]}}">{{subitem[0]}}</a></li>
+												{% endif %}
+											{% endfor %}
+										</ul>
+									</li>
+								{% else %}
+									<li><a href="{{item[1]}}">{{item[0]}}</a></li>
+								{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+				{% endfor %}
+
+				<div class="col-xs-12">
+					<pre>{{text}}</pre>
+				</div>
+
+			</div>
+		</div> <!-- end content -->
+		{% include 'elements/footer.html' %}
+	</body>
+
+</html>

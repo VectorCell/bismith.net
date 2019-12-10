@@ -1,0 +1,79 @@
+[
+	[
+		"Network",
+		[
+			["Home Router", "http://192.168.1.254/"],
+			["Nano Router", "http://tplinklogin.net/"],
+			["Android Device Manager", "https://www.google.com/android/devicemanager?u=0"],
+			["Google Location History", "https://maps.google.com/locationhistory/b/0"],
+			["VPS", "http://vps.bismith.net/"],
+			["VPS via VPN", "http://vpn.bismith.net/"],
+			["bismith - Webmin", "https://vpn.bismith.net:10000/"],
+			["leander - Webmin", "https://leander.vpn.bismith.net:10000/"],
+			["µTorrent on downloader.bismith.net", "http://downloader.vpn.bismith.net:8080/gui/web/index.html"],
+			["Kodi on lotus", "http://lotus.local:8081/"],
+			["Leander Monitor", "http://leander.vpn.bismith.net/"]
+		]
+	],
+	[
+		"News",
+		[
+			["Google News", "https://news.google.com/"],
+			["CNN", "http://www.cnn.com/"],
+			["MSNBC", "http://www.nbcnews.com/"],
+			["Fox News", "http://www.foxnews.com/"],
+			["BBC", "http://www.bbc.co.uk/"],
+			["Hacker News", "https://news.ycombinator.com/"]
+		]
+	],
+	[
+		"Entertainment",
+		[
+			[
+				"TV",
+				[
+					[
+						"The Expanse",
+						[
+							["Wikipedia", "https://en.wikipedia.org/wiki/List_of_The_Expanse_episodes"],
+							["RARBG", "https://rarbg.to/torrents.php?search=the%20expanse%201080p%20s03&order=seeders&by=DESC"],
+							["PSARips", "https://psarips.com/tv-show/the_expanse/"]
+						]
+					],
+					[
+						"Legion",
+						[
+							["Wikipedia", "https://en.wikipedia.org/wiki/Legion_(TV_series)"],
+							["RARBG", "https://rarbg.to/torrents.php?search=legion%201080p%20s02&order=seeders&by=DESC"],
+							["PSARips", "https://psarips.com/tv-show/legion/"]
+						]
+					]
+				]
+			],
+			[
+				"Games"
+			]
+		]
+	],
+	[
+		"Money",
+		[
+			["Austin Telco", "https://atfcu.org/"],
+			["PayPal", "https://www.paypal.com/"],
+			["Chase Bank", "https://www.chase.com/"],
+			["Discover", "https://www.discover.com/"],
+			["Chevron and Texaco Credit Card", "http://www.chevrontexacocards.com/"],
+			["American Express", "https://www.americanexpress.com/?inav=NavLogo"],
+			["Activity | Simple", "https://bank.simple.com/activity"],
+			["Nelnet", "https://www.nelnet.com/home.aspx"],
+			["Sallie Mae", "https://login.salliemae.com/CALM/login.do?command=showLoginPage"]
+		]
+	],
+	[
+		"Projects",
+		[
+			["GitHub - VectorCell", "https://github.com/VectorCell"],
+			["VectorCell / home — Bitbucket", "https://bitbucket.org/"]
+		]
+	]
+]
