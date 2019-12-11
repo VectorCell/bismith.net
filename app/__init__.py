@@ -155,7 +155,7 @@ def wildsurge():
 		dir_path = os.path.dirname(os.path.realpath(__file__))
 		surgelist = []
 		surgenum = 0
-		with open(dir_path + "/data/wildsurges.txt", encoding="utf-8") as file:
+		with open(dir_path + "/data/wildsurges2.txt", encoding="utf-8") as file:
 			for line in file:
 				line = line.strip()
 				tokens = line.split(" ")
