@@ -16,7 +16,7 @@ import dashboard
 import landing
 
 
-ALLOW_FILE_DELETION = False
+ALLOW_FILE_DELETION = True
 
 
 GLOBAL_CACHE = {}
@@ -27,7 +27,7 @@ app = Flask(__name__)
 
 UPLOAD_DIR = os.path.realpath(__file__)[:-len('__init__.py')] + 'static/uploads'
 app.config['UPLOAD_DIR'] = UPLOAD_DIR
-app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 64 * 1024 * 1024 # 64 MiB
 
 
 @app.route('/')
