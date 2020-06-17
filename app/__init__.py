@@ -15,6 +15,8 @@ import projects
 import dashboard
 import landing
 
+import secrets
+
 
 ALLOW_FILE_DELETION = True
 
@@ -202,18 +204,35 @@ def get_ip_addr():
 	return jsonify(data)
 
 
-@app.route('/api/sendzfsalert')
-def send_zfs_alert():
+@app.route('/api/alert')
+def send_alert():
+	def get_file_contents(filename):
+		with open(filename, 'r') as f:
+			return f.read().strip()
 	try:
-		import base64
-		import smtplib
-		sender = base64.b64decode('WkZTLkFMRVJUQGJpc21pdGgubmV0').decode('UTF-8')
-		receiver = base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')
-		message = 'ZFS error detected'
-		smtpObj = smtplib.SMTP('localhost')
-		smtpObj.sendmail(sender, [receiver], message)
-		status = {'success': True, 'message': message, 'sender': sender,
-		          'receivers': receiver}
+		# https://pushover.net/api
+		app_token = secrets.get_secret("pushover_app_token_alerts")
+		user_key = secrets.get_secret("pushover_user_key")
+
+		if request.args.get('message'):
+			message = request.args.get('message')
+		elif request.args.get('msg'):
+			message = request.args.get('msg')
+		else:
+			message = "[no message supplied]"
+			return jsonify({'success': False, 'error': message})
+
+		import http.client, urllib
+		conn = http.client.HTTPSConnection("api.pushover.net:443")
+		conn.request("POST", "/1/messages.json",
+		  urllib.parse.urlencode({
+		    "token": app_token,
+		    "user": user_key,
+		    "message": message,
+		    "title": "Alerts API (bismith.net/api/alert)"
+		  }), { "Content-type": "application/x-www-form-urlencoded" })
+		response = conn.getresponse().read().decode('utf-8')
+		status = {'success': True, 'response': response}
 	except Exception as ex:
 		status = {'success': False, 'error': str(ex)}
 	return jsonify(status)
@@ -229,11 +248,11 @@ def arrival():
 		import base64
 		import smtplib
 		sender = base64.b64decode('QVJSSVZBTC5BTEVSVEBiaXNtaXRoLm5ldA==').decode('UTF-8')
-		receiver = base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')
+		recipient = base64.b64decode('NTEyNTc4ODA5MUB0eHQuYXR0Lm5ldA==').decode('UTF-8')
 		smtpObj = smtplib.SMTP('localhost')
-		smtpObj.sendmail(sender, [receiver], message)
+		smtpObj.sendmail(sender, [recipient], message)
 		status = {'success': True, 'message': message, 'sender': sender,
-		          'receivers': receiver}
+		          'recipients': recipient}
 	except Exception as ex:
 		status = {'success': False, 'error': str(ex)}
 	return jsonify(status)
